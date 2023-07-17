@@ -9,6 +9,7 @@ import AboutProjects from "@/components/Home/AboutProjects/AbooutProjects"
 import {useRouter} from "next/router";
 import state from '../state'
 import MainLayout from "@/layouts/MainLayout";
+import Head from "next/head";
 
 
 

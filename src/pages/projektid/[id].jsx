@@ -41,21 +41,12 @@ export async function getStaticProps() {
 
 
 export async function getStaticPaths() {
-    // Fetch the data required to generate dynamic paths
-    // For example, you can query an API or fetch data from a database
 
-    // Return an array of objects containing the `params` key
-    // Each object represents a dynamic path and should contain the necessary parameters
-    // For example:
-    return {
-        paths: [
-            { params: { id: 'kakumae-sadam' } }, // Replace 'project1' with an actual project ID
-            { params: { id: 'module-tech' } }, // Replace 'project2' with an actual project ID
-            { params: { id: 'eesti-traat' } }, // Replace 'project2' with an actual project ID
-            { params: { id: 'favor' } }, // Replace 'project2' with an actual project ID
-            { params: { id: 'r13' } }, // Replace 'project2' with an actual project ID
-            // Add more objects for additional dynamic paths
-        ],
-        fallback: false, // Set to true if you have additional dynamic paths that are not specified here
-    };
+    // const props = JSON.stringify(state)
+
+    const paths = state.home[0].projects.map((project) => ({
+        params: {id:project.url}
+    }))
+
+    return {paths, fallback: false};
 }
