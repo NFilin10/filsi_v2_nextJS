@@ -1,0 +1,161 @@
+.projectsGalleryContainer{
+    width: 100%;
+    background-color: #2D2D2D;
+
+
+}
+
+
+
+.projectName{
+    max-width: inherit;
+    padding: 10px 40px;
+    background-color: #242424;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+
+
+
+.projectPhotos{
+    max-width: 1700px;
+
+    margin: 30px auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start ;
+
+    gap: 30px;
+
+}
+
+.projectPhotosWrapper{
+    width: 100%;
+}
+
+.buttonWrapper{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+
+}
+
+.project{
+    cursor: pointer;
+    max-width: 540px;
+    height: 805px;
+    /*transition: .25s ease;*/
+}
+
+.serviceImg{
+    object-fit: cover;
+    display: block;
+    width: 540px;
+    height: 705px;
+    -webkit-filter: brightness(100%);
+
+}
+
+.project:hover{
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+
+.serviceImg:hover + .projectName{
+    transition: all .5s ease;
+    background-color: #0072A8;
+}
+
+.projectName:hover{
+    transition: all .5s ease;
+    background-color: #0072A8;
+}
+
+
+.allProjectsBtn{
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 40px;
+    border: 1px solid #0072A8;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    transform: scale(1);
+    transition: border-color 300ms ease-out, color 300ms ease-out;
+}
+
+.allProjectsBtn:hover{
+    background-color: #0072A8;
+}
+
+
+@media screen and (max-width: 780px){
+    .projectsHeading{
+        padding: 30px
+    }
+
+    .projectsHeading h1{
+        font-size: 30px;
+        line-height: 40px;
+
+    }
+
+    .projectsHeading p{
+        font-size: 10px;
+    }
+    .serviceImg{
+        height: 350px;
+        width: 350px ;
+    }
+
+    .projectPhotos{
+        display: flex;
+        justify-content: center;
+    }
+
+    .project{
+        height: 450px;
+    }
+}
+
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px) {
+    .projectPhotos{
+        max-width: 1302px !important;
+    }
+
+    .project{
+        max-width: 400px;
+        height: 605px;
+    }
+
+    .serviceImg{
+
+        max-width: 400px;
+        height: 505px;
+
+    }
+
+
+}

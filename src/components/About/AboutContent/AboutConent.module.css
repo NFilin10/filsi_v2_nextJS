@@ -1,0 +1,112 @@
+
+
+.aboutContent{
+    justify-content: space-between;
+    display: flex;
+    margin: 120px auto;
+    max-width: 1602px;
+}
+
+.textInfo{
+    text-align: justify;
+    display: block;
+    width: 30%;
+
+}
+
+.textInfo h2{
+    font-size: 48px;
+}
+
+.textInfo p{
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.img{
+    display: flex;
+    justify-content: flex-end;
+    width: 63%;
+}
+
+.img img{
+    object-fit: cover;
+    width: 95%;
+    height: 100%;
+}
+
+
+.textInfo h2::after {
+    display:block;
+    clear:both;
+    content : "";
+    position: relative;
+    left    : 0;
+    bottom  : 0;
+    max-width:250px;
+    height  : 1px;
+    width   : 50%;  /* or 100px */
+    border-bottom:2px solid #0072A8;
+
+    padding:4px 0px;
+}
+
+@media screen and (max-width: 780px){
+
+    .servicesHeading{
+        padding: 30px;
+        display: block;
+    }
+
+    .servicesHeading h1{
+        font-size: 30px;
+        line-height: 40px;
+
+    }
+
+    .servicesHeading p{
+        font-size: 10px;
+    }
+
+    .services{
+        justify-content: center;
+    }
+
+    .aboutContent{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .textInfo{
+        padding: 20px;
+        width: 90%;
+    }
+
+    .img{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .img img{
+        width: 95%;
+    }
+
+    .aboutContent{
+        justify-content: center;
+    }
+
+    .textInfo h2{
+        font-size: 30px;
+    }
+
+}
+
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px){
+    .aboutContent{
+        max-width: 1150px;
+    }
+}

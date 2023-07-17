@@ -1,0 +1,131 @@
+.aboutContent{
+    /*height: 455px;*/
+    display: flex;
+
+}
+
+
+.headingSection{
+    margin-top: 180px;
+    height: 178px;
+    width: 50%;
+    background-color: #2D2D2D;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+
+.headingSection h2{
+    background-color: #2D2D2D;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+    line-height: 44.3px;
+    margin-top: 30px;
+}
+
+.headingSection h6{
+    font-size: 12px;
+    line-height: 20.8px;
+    background-color: #2D2D2D;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.headingSection h2 span{
+    color: #0072A8;
+}
+
+.aboutSection{
+    width: 50%;
+    height: 250px;
+    background-color: #2D2D2D;
+    margin-top: 355px;
+
+}
+
+.aboutSection p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    line-height: 30px;
+}
+
+
+
+.aboutSectionContent{
+    margin-left: 110px;
+    display: block;
+    overflow-x: hidden !important;
+}
+
+.allProjectsBtn{
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 40px;
+    border: 1px solid #0072A8;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    transform: scale(1);
+    transition: border-color 300ms ease-out, color 300ms ease-out;
+}
+
+.allProjectsBtn:hover{
+    background-color: #0072A8;
+}
+
+
+@media screen and (max-width: 780px){
+    .headingSection h2{
+        font-size: 32px;
+    }
+
+    .headingSection h6{
+        font-size: 13px;
+    }
+
+    .aboutSection p {
+        font-size: 16px;
+    }
+
+    .aboutContent{
+        flex-direction: column;
+    }
+
+    .headingSection{
+        width: 100%;
+        margin-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
+    .aboutSection{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 50px;
+
+    }
+
+    .aboutSectionContent{
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1820px)
+{
+    .aboutContent{
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+
+}

@@ -1,0 +1,118 @@
+
+
+
+.serviceWrapper{
+    width: 360px !important;
+}
+
+.serviceWrapper:hover .serviceImage::before{
+    border: 3px solid #edb820;
+}
+
+.serviceImage{
+    width: 360px !important;
+    height: 255px !important;
+}
+
+.serviceImage img{
+    width: 360px !important;
+    height: 255px !important;
+}
+
+
+.serviceText{
+    width: 360px;
+    height: 190px;
+}
+
+
+.serviceHeading{
+    margin-top: 37px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #666666;
+    margin-left: 25px;
+}
+
+.serviceDescription{
+    margin-top: 34px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 23px !important;
+    color: #666666;
+    margin-left: 25px;
+}
+
+.serviceNum{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgba(48, 48, 48, .1);
+    /*font-size: 90px;*/
+    position: absolute;
+    top: 250px;
+    left: 1px;
+    font-family: Montserrat, sans-serif;
+    font-size: 90px;
+}
+
+.serviceImage::before{
+    content: "";
+    border: 3px solid #E5E5E5;
+    z-index: -1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 0.3s ease-in-out;
+    width: 360px !important;
+    height: 255px !important;
+}
+
+@media screen and (max-width: 780px){
+    .alice-carousel{
+        top: 0;
+        margin-top: 50px !important;
+    }
+
+    .serviceWrapper{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .serviceImage{
+        width: 333px !important;
+        height: 235px !important;
+    }
+
+    .alice-carousel__stage-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .serviceImage img{
+        width: 333px !important;
+        height: 235px !important;
+    }
+
+    .serviceImage::before{
+        content: "";
+        border: none;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+
+
+
+}

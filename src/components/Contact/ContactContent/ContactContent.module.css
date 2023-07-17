@@ -1,0 +1,108 @@
+.contactsContainer{
+    width: 100%;
+    background-color: #2D2D2D;
+
+}
+
+
+.contactsHeading{
+    max-width: 1300px;
+    text-transform: uppercase;
+    color: white;
+    padding: 75px 150px;
+    background-color: #242424;
+
+}
+
+
+
+
+.contactsHeading h1{
+    font-family: 'Bungee Outline', cursive;
+    font-size: 72px;
+    line-height: 80px;
+
+}
+
+.contactsHeading p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.lowInfo{
+    color: white;
+}
+
+.contactContent{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 140px auto;
+    max-width: 1302px;
+    position: relative;
+    text-align: center;
+    flex-wrap: wrap;
+    /*width: 300px;*/
+}
+
+.contactAddress{
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
+    width: 370px;
+    height: 233px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 40px 65px;
+    position: relative;
+    background-color: white;
+    box-shadow: rgba(0, 114, 168, 0.3) 6px 8px 25px;
+
+}
+
+.details h5{
+    line-height: 3;
+    font-size: 20px;
+}
+
+.details p{
+    font-size: 14px;
+    line-height: 2;
+}
+
+.imageWrapper{
+    position: absolute;
+    top: -50px;
+
+}
+
+@media screen and (max-width: 780px) {
+    .contactsHeading {
+        padding: 30px;
+        display: block;
+    }
+
+    .contactsHeading h1 {
+        font-size: 30px;
+        line-height: 40px;
+
+    }
+
+    .contactsHeading p {
+        font-size: 10px;
+    }
+
+    .contactContent {
+        margin-top: 60px;
+        gap: 70px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactAddress{
+        max-width: 330px;
+        max-height: 233px;
+    }
+}

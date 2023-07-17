@@ -1,0 +1,49 @@
+.pageHeading{
+    text-transform: uppercase;
+    color: white;
+    padding: 75px 150px;
+}
+
+.pageHeading h1{
+    font-family: 'Bungee Outline', cursive;
+    font-size: 72px;
+    line-height: 80px;
+
+}
+
+
+.pageHeading p{
+    margin-top: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.pageHeadingContent{
+    max-width: 1300px;
+    height: 330px;
+    background-color: #242424;
+}
+
+
+@media screen and (max-width: 780px){
+    .pageHeading{
+        padding: 30px
+    }
+
+    .pageHeading h1{
+        font-size: 30px;
+        line-height: 40px;
+
+    }
+
+    .pageHeading p{
+        font-size: 10px;
+    }
+
+    .pageHeadingContent{
+        height: 170px;
+
+    }
+
+}

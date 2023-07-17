@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+a {
+    font-family: 'Montserrat', sans-serif;
+
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+
+th{
+    padding-bottom: 35px;
+}
+
+
+td,
+th {
+
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td {
+    font-size: 19px;
+    padding: 15px;
+}
+
+th h2{
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #0072A8;
+}
