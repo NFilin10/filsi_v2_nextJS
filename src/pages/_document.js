@@ -18,6 +18,7 @@ export default function Document() {
                     crossOrigin=""/>
                 <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap"
                               rel="stylesheet"/>
+                <link rel="shortcut icon" href="/favicon.svg" />
             </Head>
             <body>
             <Main />

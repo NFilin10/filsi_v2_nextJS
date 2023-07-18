@@ -3,6 +3,11 @@ import {useParams} from "react-router-dom";
 import SpecProjectContent from "@/pages/projektid/SpecProjectContent/SpecProjectContent";
 import state from "@/state";
 import {useRouter} from "next/router";
+import Head from "next/head";
+
+
+
+
 
 
 const Id = ({props}) => {
@@ -22,9 +27,20 @@ const Id = ({props}) => {
 
 
     return (
-        <div>
-            <SpecProjectContent state={ propsObj.home[0].projects[id]}/>
-        </div>
+        <>
+            <Head>
+                <meta charSet="UTF-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <meta name="author" content="Filsi"/>
+                <title>{propsObj.home[0].projects[id].name}</title>
+                <meta name="description" content={propsObj.home[0].projects[id].projectDescription}/>
+                <meta name="keywords" content="objekt, ehitustööd, projekt"/>
+            </Head>
+            <div>
+                <SpecProjectContent state={ propsObj.home[0].projects[id]}/>
+            </div>
+        </>
+
     )
 }
 export default Id

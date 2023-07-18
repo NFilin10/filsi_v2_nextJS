@@ -12,11 +12,17 @@ import MainLayout from "@/layouts/MainLayout";
 import Head from "next/head";
 
 
-
+export const metadata = {
+    title: 'test',
+    description: '...',
+}
 
 
 function Home({props}) {
     const propsObj = JSON.parse(props)
+
+
+
 
     const location = useRouter();
 
@@ -38,14 +44,25 @@ function Home({props}) {
 
 
     return (
-        <MainLayout>
-            <div className="homeWrapper">
-                <Header state={propsObj.home[0].swiper}/>
-                <Services  state={propsObj.home[0].services}/>
-                <AboutProjects state={propsObj.home[0].projects}/>
-                <Partners state={propsObj.home[0].partners}/>
-            </div>
-        </MainLayout>
+        <>
+            <Head>
+                <meta charSet="UTF-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <meta name="description" content="Tere tulemast meie kodulehele! Pakume kvaliteetseid elektrimontaažiteenuseid ja ehitustöid. Välisvõrkude ehitus, sisetööd, kontaktvõrgu ehitus ja palju muud. Tutvuge meie teenustega ja võtke meiega ühendust!"/>
+                <meta name="keywords" content="elektrimontaaž, ehitustööd, välisvõrkude ehitus, sisetööd, kontaktvõrgu ehitus"/>
+                <meta name="author" content="Filsi"/>
+                <title>Filsi - Kvaliteetsed Elektrimontaažiteenused</title>
+            </Head>
+            <MainLayout>
+                <div className="homeWrapper">
+                    <Header state={propsObj.home[0].swiper}/>
+                    <Services  state={propsObj.home[0].services}/>
+                    <AboutProjects state={propsObj.home[0].projects}/>
+                    <Partners state={propsObj.home[0].partners}/>
+                </div>
+            </MainLayout>
+        </>
+
 
     );
 }
