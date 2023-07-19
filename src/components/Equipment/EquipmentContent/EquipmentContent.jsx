@@ -28,8 +28,8 @@ const EquipmentContent = (props) => {
     let equpmentElement = props.state.equipmentInfo.map((equipment, index) =>
 
 
-        <Popup trigger=
-                   {<div className={Styles.equipment} key={index} data-aos="fade-down" data-aos-duration="1800">
+        <Popup key={index} trigger=
+                   {<div className={Styles.equipment}  data-aos="fade-down" data-aos-duration="1800">
                        <Image className={Styles.equipmentImg} src={equipment.equipmentImg} alt=""/>
                        <div className={Styles.equipmentDescription}>
                            <div className={Styles.equipmentName}>{equipment.equipmentName}</div>

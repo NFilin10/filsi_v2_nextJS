@@ -33,7 +33,7 @@ const ServicesContent = (props) => {
                 <h3>{service.serviceName}</h3>
                 <ul>
                     {
-                        service.shortDesc.map(sDesc => <li>{sDesc}</li>)
+                        service.shortDesc.map((sDesc, index) => <li key={index}>{sDesc}</li>)
                     }
                 </ul>
             </div>
