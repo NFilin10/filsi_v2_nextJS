@@ -1,5 +1,3 @@
-import Navbar from "../../Common/Navbar/Navbar";
-
 import {useState} from 'react'
 
 import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet'
