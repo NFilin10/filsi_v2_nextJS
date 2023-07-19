@@ -50,35 +50,35 @@ function Navbar(props) {
         <nav className={Styles.navbar} style={{position: !showNavbar ? 'relative' : '', backgroundColor: !showNavbar ? '#242424' : 'transparent', }}>
 
             <div className={Styles.nav_content}>
-                <Link href='/' className={`${Styles.logo}`}><Image src={logo} alt=""/></Link>
+                <Link href='/' className={Styles.logo}><Image src={logo} alt=""/></Link>
 
 
                 <ul className={`${Styles.navMenu} ${isActive ? Styles.active : ''}`}>
                     <li onClick={removeActive}>
-                        <Link href='/' className={`${Styles.navLink}`} >Esileht</Link>
+                        <Link href='/' className={Styles.navLink} >Esileht</Link>
                     </li>
                     <li onClick={removeActive}>
-                        <Link href='/teenused' className={`${Styles.navLink}`} >Teenused</Link>
+                        <Link href='/teenused' className={Styles.navLink} >Teenused</Link>
                     </li>
                     <li onClick={removeActive}>
-                        <Link href='/projektid' className={`${Styles.navLink}`}>Tehtud too</Link>
+                        <Link href='/projektid' className={Styles.navLink}>Tehtud too</Link>
                     </li>
                     <li onClick={removeActive}>
-                        <Link href='/meist' className={`${Styles.navLink}`}>Firmast</Link>
+                        <Link href='/meist' className={Styles.navLink}>Firmast</Link>
                     </li>
                     <li onClick={removeActive}>
-                        <Link href='/tehnika' className={`${Styles.navLink}`}>Meie tehnika</Link>
+                        <Link href='/tehnika' className={Styles.navLink}>Meie tehnika</Link>
                     </li>
                     <li onClick={removeActive}>
-                        <Link href='/kontakt' className={`${Styles.navLink}`}>Kontakt</Link>
+                        <Link href='/kontakt' className={Styles.navLink}>Kontakt</Link>
                     </li>
                 </ul>
 
 
                 <div className={`${Styles.hamburger} ${isActive ? Styles.active : ''}`}  onClick={toggleActiveClass}>
-                    <span className={`${Styles.bar}`}></span>
-                    <span className={`${Styles.bar}`}></span>
-                    <span className={`${Styles.bar}`}></span>
+                    <span className={Styles.bar}></span>
+                    <span className={Styles.bar}></span>
+                    <span className={Styles.bar}></span>
                 </div>
             </div>
         </nav>

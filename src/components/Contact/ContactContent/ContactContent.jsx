@@ -3,9 +3,9 @@ import React, {useEffect} from 'react'
 
 import Styles from './ContactContent.module.css'
 import {useLocation} from "react-router-dom";
-import PageHeading from "../../Common/PageHeading/PageHeading";
 import {useRouter} from "next/router";
 import Image from "next/image";
+import PageHeading from "@/components/common/PageHeading/PageHeading";
 
 
 const ContactContent = (props) => {

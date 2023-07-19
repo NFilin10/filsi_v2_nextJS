@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react'
 import Popup from 'reactjs-popup';
 import Styles from "./EquipmentContent.module.css";
-import PageHeading from "../../Common/PageHeading/PageHeading";
 import AOS from "aos";
 import Image from "next/image";
 import {useRouter} from "next/router";
+import PageHeading from "@/components/common/PageHeading/PageHeading";
 
 const EquipmentContent = (props) => {
 
