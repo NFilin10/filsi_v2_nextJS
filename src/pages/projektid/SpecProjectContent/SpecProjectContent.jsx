@@ -11,11 +11,13 @@ const SpecProjectContent = (props) => {
         AOS.refresh();
     }, []);
 
+    console.log("NAME " + props.state.name)
+
     return (
         <MainLayout>
             <div className={Styles.wrapper}>
                 <div className={Styles.header}>
-                    <h1>{props.state.name}</h1>
+                    {/*<h1>{props.state.name}</h1>*/}
                 </div>
                 <div className={Styles.projectImg}>
                     <Image src={props.state.img}
@@ -25,7 +27,7 @@ const SpecProjectContent = (props) => {
                     <table className={Styles.table}>
                         <thead>
                         <tr>
-                            <th colSpan="2"><h2>{props.state.name}</h2></th>
+                            {/*<th colSpan="2"><h2>{props.state.name}</h2></th>*/}
                         </tr>
                         </thead>
                         <tbody className={Styles.tableBody}>
