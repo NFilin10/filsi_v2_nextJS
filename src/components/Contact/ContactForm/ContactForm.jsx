@@ -60,7 +60,7 @@ const ContactForm = () => {
                             <span>KIRJUTAGE</span>
                             <span>MEILE</span>
                         </div>
-                        <div className={Styles.appContact}>KONTAKT INFO : +62 81 314 928 595</div>
+                        <div className={Styles.appContact}>KONTAKT INFO : +372 501 2509</div>
                     </div>
                     <div className={Styles.screenBodyItem}>
                         <form className={Styles.appForm} onSubmit={handleSubmit} method="POST">

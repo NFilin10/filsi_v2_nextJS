@@ -22,7 +22,7 @@
 
 .serviceText{
     width: 360px;
-    height: 190px;
+    height: 200px;
 }
 
 
@@ -44,6 +44,7 @@
     line-height: 23px !important;
     color: #666666;
     margin-left: 25px;
+    height: 200px;
 }
 
 .serviceNum{

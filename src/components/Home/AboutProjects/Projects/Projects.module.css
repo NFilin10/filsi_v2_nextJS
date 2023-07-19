@@ -84,7 +84,7 @@
 
 @media screen and (max-width: 780px) {
     .projectsWrapper{
-        margin-top: 250px;
+        /*margin-top: 300px;*/
         padding-left: 15px;
         padding-right: 15px;
     }

@@ -29,7 +29,7 @@ const Projektid = ({props}) => {
             <MainLayout>
                 <div>
                     <ProjectsGallery state={propsObj.home[0]}/>
-                    <DynamicMap/>
+                    <DynamicMap state={propsObj.home[0].projects}/>
                 </div>
             </MainLayout>
         </>

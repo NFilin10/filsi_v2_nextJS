@@ -133,7 +133,9 @@ const state = {
                 finishDate: "06.2019",
                 location: "maardu",
                 completedBy: "Filsi",
-                projectDescription: "Sturgeon Electric has performed electrical work at DEN since 1991, when the firm was awarded the electrical services contract for the airport’s construction. Since then, we have worked regularly at DEN, including projects involving fire alarm system upgrades, underground primary distribution, street lighting, runway lighting, and the baggage system. Notable projects involve Jeppesen Terminal and Concourses A and C, and the Hotel and Transit Center at DEN, for which Sturgeon Electrical was the primary electrical contractor."
+                projectDescription: "Sturgeon Electric has performed electrical work at DEN since 1991, when the firm was awarded the electrical services contract for the airport’s construction. Since then, we have worked regularly at DEN, including projects involving fire alarm system upgrades, underground primary distribution, street lighting, runway lighting, and the baggage system. Notable projects involve Jeppesen Terminal and Concourses A and C, and the Hotel and Transit Center at DEN, for which Sturgeon Electrical was the primary electrical contractor.",
+                Latitude: 59.45047898716102,
+                Longitude: 24.602906514467623
             },
             {
                 id: 1,
@@ -142,7 +144,9 @@ const state = {
                 name: "Module Tech",
                 finishDate: "10.2019 ja 03.2021",
                 location: "maardu",
-                completedBy: "Filsi"
+                completedBy: "Filsi",
+                Latitude: 59.446804506266645,
+                Longitude: 24.943789984457965
             },
             {
                 id: 2,
@@ -151,7 +155,9 @@ const state = {
                 name: "Eesti Traat",
                 finishDate: "06.2018",
                 location: "maardu",
-                completedBy: "Filsi"
+                completedBy: "Filsi",
+                Latitude: 59.424281340044885,
+                Longitude: 24.95524521329249
             },
             {
                 id: 3,
@@ -160,7 +166,9 @@ const state = {
                 name: "Favor",
                 finishDate: "05.2023",
                 location: "maardu",
-                completedBy: "Filsi"
+                completedBy: "Filsi",
+                Latitude: 59.44687181380816,
+                Longitude: 24.94435881144405
             },
             {
                 id: 4,
@@ -170,7 +178,9 @@ const state = {
                 client: "Maru",
                 finishDate: "09.2022",
                 location: "maardu",
-                completedBy: "Filsi"
+                completedBy: "Filsi",
+                Latitude: 59.3521623611344,
+                Longitude:  24.88790910107856
             },
 
 
@@ -202,8 +212,8 @@ const state = {
             },
             {
                 heading: "Võtke meiega ühendust",
-                midInfo: "Mobile: (+1) 800 555 888",
-                lowInfo: "Fax: (+1) 800 666 999",
+                midInfo: "Mobiil +372 501 2509",
+                lowInfo: ".",
                 icon: contactIcon,
                 className: "lowInfo"
             },

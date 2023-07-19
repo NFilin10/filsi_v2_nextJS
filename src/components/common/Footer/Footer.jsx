@@ -19,7 +19,7 @@ const Footer = () => {
                         <Link href='/teenused'>Teenused</Link>
                     </li>
                     <li>
-                        <Link href='/projektid' >Tehtud too</Link>
+                        <Link href='/projektid' >Tehtud töö</Link>
                     </li>
                     <li>
                         <Link href='/meist' >Firmast</Link>
@@ -33,8 +33,8 @@ const Footer = () => {
                 </ul>
 
                 <ul className={Styles.shortInfo}>
-                    <li>Männiku tee 102, Tallinn 11216</li>
-                    <li> Tel./Fax +372 650 3023, Mobiil +372 501 2509</li>
+                    <li>Suur-Männiku 8, Tallinn 11216</li>
+                    <li>Mobiil +372 501 2509</li>
                     <li> E-post: filsi@filsi.ee</li>
                 </ul>
 

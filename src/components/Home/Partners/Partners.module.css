@@ -1,6 +1,6 @@
 
 .partnersWrapper{
-    /*margin-top: 115px;*/
+
     margin-bottom: 120px;
     width: 100%;
     display: flex;
@@ -70,7 +70,7 @@
 
 @media screen and (max-width: 780px){
     .partnersHeading{
-       margin-top: 40px;
+       margin-top: 4px;
     }
 
     .partnersList{
@@ -81,5 +81,9 @@
     .partnerLogo{
         width: 130px;
         height: 150px;
+    }
+
+    .partnersWrapper{
+        margin-top: -135px;
     }
 }

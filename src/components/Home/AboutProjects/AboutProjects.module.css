@@ -21,10 +21,11 @@
 
 
 .aboutProjectsContent{
-
+    display: flex;
+    flex-direction: column;
     margin: 180.5px auto;
     max-width: 1603px;
-    height: 100%;
+    /*height: 100%;*/
 }
 
 @media screen and (max-width: 780px){
@@ -40,7 +41,11 @@
         width: auto;
     }
     .aboutProjectsWrapper {
-        min-height: 1340px;
+        height: 100%;
+    }
+
+    .aboutProjectsContent{
+        height: 1400px;
     }
 
 
