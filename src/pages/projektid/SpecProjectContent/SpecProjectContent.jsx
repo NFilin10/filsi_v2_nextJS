@@ -11,7 +11,6 @@ const SpecProjectContent = (props) => {
         AOS.refresh();
     }, []);
 
-    console.log("NAME " + props.state.name)
 
     return (
         <MainLayout>
