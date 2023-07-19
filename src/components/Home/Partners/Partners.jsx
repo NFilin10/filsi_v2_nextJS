@@ -10,8 +10,8 @@ import Image from "next/image";
 const Partners = (props) => {
 
 
-    let partnersElements = props.state.map(partner =>
-        <div className={Styles.partners} data-aos="zoom-in">
+    let partnersElements = props.state.map((partner, index) =>
+        <div className={Styles.partners} data-aos="zoom-in" key={index}>
             <Image className={Styles.partnerLogo} src={partner.logo} alt=""/>
             {/*<h3>{partner.name}</h3>*/}
         </div>

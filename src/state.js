@@ -193,6 +193,7 @@ const state = {
     contact: [{
         contactInfo: [
             {
+
                 heading: "Meie Asukoht",
                 midInfo: "Suur-Männiku 8",
                 lowInfo: "Tallinn Harjumaa 11216",

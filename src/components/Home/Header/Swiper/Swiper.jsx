@@ -18,8 +18,8 @@ import Image from "next/image";
 
 
 export default function SwiperComp(props) {
-    let swiperElement = props.state.map(slide =>
-        <SwiperSlide>
+    let swiperElement = props.state.map((slide, index) =>
+        <SwiperSlide key={index}>
             <Image src={slide.img} alt=""/>
             <div className={Styles.sliderInfowWapper}>
                 <h3 className={Styles.sliderText1}>{slide.text1}</h3>

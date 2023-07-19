@@ -34,8 +34,8 @@ const Projects = (props) => {
         }
     };
 
-    let projectElements = props.state.map(project =>
-        <Link href={"/projektid/" + project.url}>
+    let projectElements = props.state.map((project, index) =>
+        <Link href={"/projektid/" + project.url} key={index}>
             <div className={Styles.project}>
                 <Image className={Styles.projectImg} src={project.img} alt=""/>
                 <div className={Styles.projectName}>{project.name}</div>

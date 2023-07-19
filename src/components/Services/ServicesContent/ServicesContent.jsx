@@ -25,9 +25,9 @@ const ServicesContent = (props) => {
     }, [servicePage]);
 
 
-    let servicesElement = props.state.services.map(service =>
+    let servicesElement = props.state.services.map((service, index) =>
 
-        <div className={Styles.service} data-aos="flip-up"  data-aos-duration="1500">
+        <div className={Styles.service} data-aos="flip-up"  data-aos-duration="1500" key={index}>
             <Image className={Styles.serviceImg} src={service.serviceImg} alt=""/>
             <div className={Styles.serviceDescription}>
                 <h3>{service.serviceName}</h3>

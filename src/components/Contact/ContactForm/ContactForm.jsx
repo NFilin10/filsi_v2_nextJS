@@ -1,7 +1,8 @@
-import React, {useEffect} from 'react'
-
+import React, {useEffect, useState} from 'react'
+import axios from 'axios';
 import Styles from './ContactForm.module.css'
 import AOS from "aos";
+
 
 const ContactForm = () => {
 
@@ -9,6 +10,34 @@ const ContactForm = () => {
         AOS.init();
         AOS.refresh();
     }, []);
+
+
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [submitted, setSubmitted] = useState(false);
+
+    const handleSubmit = async (e) => {
+        axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+        axios.defaults.xsrfCookieName = "csrftoken";
+        axios.defaults.withCredentials = true;
+        e.preventDefault();
+
+        try {
+            const response = await axios.post(' http://127.0.0.1:8000/api/contact', {
+                name,
+                email,
+                message,
+            });
+            console.log(response.data); // Optional: Log the response from the Django backend
+            setSubmitted(true);
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
+
 
     return(
         <div className={Styles.container} data-aos="zoom-in-up" data-aos-duration="1000">
@@ -34,18 +63,18 @@ const ContactForm = () => {
                         <div className={Styles.appContact}>KONTAKT INFO : +62 81 314 928 595</div>
                     </div>
                     <div className={Styles.screenBodyItem}>
-                        <form className={Styles.appForm}>
+                        <form className={Styles.appForm} onSubmit={handleSubmit} method="POST">
                             <div className={Styles.appFormGroup}>
-                                <input className={Styles.appFormControl} placeholder="NIMI"/>
+                                <input type="text" value={name} onChange={(e) => setName(e.target.value)} className={Styles.appFormControl} placeholder="NIMI"/>
                             </div>
                             <div className={Styles.appFormGroup}>
-                                <input className={Styles.appFormControl} placeholder="EMAIL"/>
+                                <input  type="email" value={email}  onChange={(e) => setEmail(e.target.value)} className={Styles.appFormControl} placeholder="EMAIL"/>
                             </div>
                             <div className={`${Styles.appFormGroup} ${Styles.message}`}>
-                                <input className={Styles.appFormControl} placeholder="SÕNUM"/>
+                                <input value={message} onChange={(e) => setMessage(e.target.value)} className={Styles.appFormControl} placeholder="SÕNUM"/>
                             </div>
                             <div className={`${Styles.appFormGroup} ${Styles.buttons}`}>
-                                <button className={Styles.appFormButton}>SAADA</button>
+                                <button type="submit" className={Styles.appFormButton}>SAADA</button>
                             </div>
                         </form>
                     </div>

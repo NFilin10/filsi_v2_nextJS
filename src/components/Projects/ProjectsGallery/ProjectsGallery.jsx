@@ -41,8 +41,8 @@ const ProjectsGallery = (props) => {
     const slice = props.state.projects.slice(0, noOfElement)
 
 
-    let projectElements = slice.map(project =>
-        <Link href={"/projektid/" + project.url}>
+    let projectElements = slice.map((project, index) =>
+        <Link href={"/projektid/" + project.url}  key={index}>
             <div className={Styles.project} data-aos="fade-down"  data-aos-duration="1500">
                 <Image className={Styles.serviceImg}  src={project.img}  alt=""/>
                 <div className={Styles.projectName}>{project.name}</div>

@@ -17,8 +17,8 @@ const Services = (props) => {
     };
 
 
-    let serviceElements = props.state.map(service =>
-        <div className={Styles.serviceWrapper}>
+    let serviceElements = props.state.map((service, index) =>
+        <div className={Styles.serviceWrapper} key={index}>
             <div className={Styles.serviceImage}>
                 <Image alt="" src={service.serviceImg} onDragStart={handleDragStart} role="presentation" />
             </div>

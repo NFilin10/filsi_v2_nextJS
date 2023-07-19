@@ -17,6 +17,7 @@ const Kontakt = ({props}) => {
                 <meta name="author" content="Filsi"/>
                 <meta name="description" content="Võtke meiega ühendust ja küsige lisateavet elektrimontaažiteenuste kohta. Oleme siin, et aidata teil lahendada teie elektriga seotud vajadused. Täitke kontaktivorm või kasutage meie e-posti ja telefoninumbrit. Ootame teiega koostööd!"/>
                 <meta name="keywords" content="kontakt, elektrimontaaž, kontaktivorm, e-post, telefon"/>
+                <title>Filsi - kontakt</title>
             </Head>
             <MainLayout>
                 <div>

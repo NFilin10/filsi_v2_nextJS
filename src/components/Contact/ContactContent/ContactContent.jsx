@@ -26,8 +26,8 @@ const ContactContent = (props) => {
     }, [contactPage]);
 
 
-    let contactElement = props.state.contactInfo.map(contact =>
-            <div className={Styles.contactAddress}>
+    let contactElement = props.state.contactInfo.map((contact, index) =>
+            <div className={Styles.contactAddress} key={index}>
                 <div className={Styles.imageWrapper}>
                     <Image src={contact.icon} alt=""/>
                 </div>
