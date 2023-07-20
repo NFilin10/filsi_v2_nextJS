@@ -5,10 +5,6 @@ import "aos/dist/aos.css";
 import Link from "next/link";
 
 const About = () => {
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-    }, []);
 
     return(
         <div className={Styles.aboutContent}>

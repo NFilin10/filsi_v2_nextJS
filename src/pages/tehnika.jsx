@@ -4,10 +4,8 @@ import EquipmentContent from "@/components/Equipment/EquipmentContent/EquipmentC
 import MainLayout from "@/layouts/MainLayout";
 import Head from "next/head";
 
-const Tehnika = ({props}) => {
 
-    const propsObj = JSON.parse(props)
-
+const Tehnika = (props) => {
 
     return(
         <>
@@ -18,26 +16,21 @@ const Tehnika = ({props}) => {
                 <meta name="description" content="Tutvuge meie laia valikuga ehitustehnikaga! Meie ettevõttel on suur tehnika park, mis hõlmab mitmesugust ehitustehnikat. Uurige lähemalt meie kasutatavaid seadmeid ja ressursse, mis võimaldavad meil täita erinevaid elektritööde projekte."/>
                 <meta name="keywords" content="ehitustehnika, tehnika park, elektritööde seadmed, ehitusmasinad, ressursid"/>
                     <title>Filsi - Ehitustehnika</title>
-
             </Head>
             <MainLayout>
                 <div>
-                    <EquipmentContent state={propsObj.equipment[0]}/>
+                    <EquipmentContent state={props.equipment[0]}/>
                 </div>
             </MainLayout>
         </>
-
-
     )
 }
 
 export default Tehnika
 
+
 export async function getStaticProps() {
-    const props = JSON.stringify(state)
     return {
-        props: {
-            props
-        }
+        props: state
     };
 }

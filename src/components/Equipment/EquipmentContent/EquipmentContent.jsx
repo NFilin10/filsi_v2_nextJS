@@ -46,12 +46,6 @@ const EquipmentContent = (props) => {
                                 <p>{equipment.equipmentDesc}</p>
                             </div>
                         </div>
-                        {/*<div>*/}
-                        {/*    <button onClick=*/}
-                        {/*                {() => close()}>*/}
-                        {/*        Close modal*/}
-                        {/*    </button>*/}
-                        {/*</div>*/}
                     </div>
                 )
             }
@@ -60,10 +54,6 @@ const EquipmentContent = (props) => {
 
     )
 
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-    }, []);
 
     return (
         <div className={Styles.equipmentsContainer}>

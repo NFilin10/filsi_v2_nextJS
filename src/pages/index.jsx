@@ -12,17 +12,7 @@ import MainLayout from "@/layouts/MainLayout";
 import Head from "next/head";
 
 
-export const metadata = {
-    title: 'test',
-    description: '...',
-}
-
-
-function Home({props}) {
-    const propsObj = JSON.parse(props)
-
-
-
+function Home(props) {
 
     const location = useRouter();
 
@@ -41,8 +31,6 @@ function Home({props}) {
     }, [isHomePage]);
 
 
-
-
     return (
         <>
             <Head>
@@ -55,10 +43,10 @@ function Home({props}) {
             </Head>
             <MainLayout>
                 <div className="homeWrapper">
-                    <Header state={propsObj.home[0].swiper}/>
-                    <Services  state={propsObj.home[0].services}/>
-                    <AboutProjects state={propsObj.home[0].projects}/>
-                    <Partners state={propsObj.home[0].partners}/>
+                    <Header state={props.home[0].swiper}/>
+                    <Services  state={props.home[0].services}/>
+                    <AboutProjects state={props.home[0].projects}/>
+                    <Partners state={props.home[0].partners}/>
                 </div>
             </MainLayout>
         </>
@@ -70,10 +58,7 @@ function Home({props}) {
 export default Home;
 
 export async function getStaticProps() {
-    const props = JSON.stringify(state)
     return {
-        props: {
-            props
-        }
+        props: state
     };
 }

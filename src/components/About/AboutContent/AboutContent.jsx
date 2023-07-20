@@ -4,6 +4,7 @@ import aboutImg from "../../../assets/aboutImg.jpg"
 import Image from "next/image";
 import PageHeading from "@/components/common/PageHeading/PageHeading";
 
+
 const AboutContent = (props) => {
     return(
         <div className={Styles.abouWrapper}>

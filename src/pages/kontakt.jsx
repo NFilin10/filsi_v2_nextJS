@@ -1,13 +1,12 @@
 import React from 'react'
-
 import state from "@/state";
 import ContactContent from "@/components/Contact/ContactContent/ContactContent";
 import ContactForm from "@/components/Contact/ContactForm/ContactForm";
 import MainLayout from "@/layouts/MainLayout";
 import Head from "next/head";
-const Kontakt = ({props}) => {
 
-    const propsObj = JSON.parse(props)
+
+const Kontakt = (props) => {
 
     return(
         <>
@@ -21,7 +20,7 @@ const Kontakt = ({props}) => {
             </Head>
             <MainLayout>
                 <div>
-                    <ContactContent state={propsObj.contact[0]}/>
+                    <ContactContent state={props.contact[0]}/>
                     <ContactForm/>
 
                 </div>
@@ -31,14 +30,12 @@ const Kontakt = ({props}) => {
 
     )
 }
+
 export default Kontakt
 
 
 export async function getStaticProps() {
-    const props = JSON.stringify(state)
     return {
-        props: {
-            props
-        }
+        props: state
     };
 }

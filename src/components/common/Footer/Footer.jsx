@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Styles from './Footer.module.css'
 import logo from "../../../assets/logo.png";
 import Link from "next/link";
@@ -7,6 +6,7 @@ import Image from "next/image";
 
 
 const Footer = () => {
+
     return (
         <footer className={Styles.footerWrapper}>
             <div className={Styles.footerContent}>

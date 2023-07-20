@@ -1,13 +1,9 @@
 import {useEffect, useState} from 'react'
 import  Styles from './Navbar.module.css';
 import logo from './../../../assets/logo.png'
-
-
-import {useLocation} from "react-router-dom";
 import Link from "next/link";
 import {useRouter} from "next/router";
 import Image from "next/image";
-
 
 
 function Navbar(props) {
@@ -24,13 +20,9 @@ function Navbar(props) {
     }, [location])
 
 
-
     // adding the states
     const [isActive, setIsActive] = useState(false);
 
-    if (isActive){
-
-    }
 
     //add the active class
     const toggleActiveClass = () => {
@@ -43,10 +35,7 @@ function Navbar(props) {
         setIsActive(false)
     }
 
-
     return (
-
-
         <nav className={Styles.navbar} style={{position: !showNavbar ? 'relative' : '', backgroundColor: !showNavbar ? '#242424' : 'transparent', }}>
 
             <div className={Styles.nav_content}>

@@ -1,9 +1,7 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import About from './About/About'
 import Styles from './AboutProjects.module.css'
 import Projects from './Projects/Projects'
-
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const AbooutProjects = (props) => {

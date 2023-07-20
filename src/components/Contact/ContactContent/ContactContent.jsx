@@ -1,8 +1,6 @@
 
 import React, {useEffect} from 'react'
-
 import Styles from './ContactContent.module.css'
-import {useLocation} from "react-router-dom";
 import {useRouter} from "next/router";
 import Image from "next/image";
 import PageHeading from "@/components/common/PageHeading/PageHeading";

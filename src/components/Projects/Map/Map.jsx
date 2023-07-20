@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import s from '../../../assets/moduleTech.jpg';
 import Styles from './Map.module.css';
 import Image from 'next/image';
+
 
 const Map = (props) => {
     const [activeObject, setActiveObject] = useState(null);

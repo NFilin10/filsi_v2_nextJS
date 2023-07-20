@@ -1,13 +1,11 @@
 import React, {useEffect} from 'react'
 import Styles from './ServicesContent.module.css'
-import {useLocation} from "react-router-dom";
-import AOS from "aos";
 import {useRouter} from "next/router";
 import Image from "next/image";
 import PageHeading from "@/components/common/PageHeading/PageHeading";
 
-const ServicesContent = (props) => {
 
+const ServicesContent = (props) => {
 
     const location = useRouter();
 
@@ -41,11 +39,6 @@ const ServicesContent = (props) => {
         </div>
     )
 
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-    }, []);
-
     return(
 
         <div className={Styles.servicesContainer}>
@@ -53,7 +46,6 @@ const ServicesContent = (props) => {
             <div className={Styles.services}>
                 {servicesElement}
             </div>
-
         </div>
 
     )

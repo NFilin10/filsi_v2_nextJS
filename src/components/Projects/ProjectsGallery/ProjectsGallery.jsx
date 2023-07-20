@@ -1,8 +1,5 @@
 import React, {useEffect, useState} from 'react'
-
 import Styles from './ProjectsGallery.module.css'
-import {useLocation} from "react-router-dom";
-import AOS from "aos";
 import Link from "next/link";
 import {useRouter} from "next/router";
 import Image from "next/image";
@@ -51,10 +48,6 @@ const ProjectsGallery = (props) => {
 
     )
 
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-    }, []);
 
     return (
         <div className={Styles.projectsGalleryContainer}>

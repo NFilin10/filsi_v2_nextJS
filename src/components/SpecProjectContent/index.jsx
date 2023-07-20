@@ -1,16 +1,10 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import Styles from './SpecProjectContent.module.css'
-import AOS from "aos";
 import Image from "next/image";
 import MainLayout from "@/layouts/MainLayout";
 
+
 const Index = (props) => {
-
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-    }, []);
-
 
     return (
         <MainLayout>

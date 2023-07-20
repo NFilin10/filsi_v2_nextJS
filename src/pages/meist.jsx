@@ -4,9 +4,8 @@ import state from "@/state";
 import MainLayout from "@/layouts/MainLayout";
 import Head from "next/head";
 
-const Meist = ({props}) => {
 
-    const propsObj = JSON.parse(props)
+const Meist = (props) => {
 
     return(
         <>
@@ -20,7 +19,7 @@ const Meist = ({props}) => {
             </Head>
             <MainLayout>
                 <div>
-                    <AboutContent state={propsObj.about[0]}/>
+                    <AboutContent state={props.about[0]}/>
                 </div>
             </MainLayout>
 
@@ -34,10 +33,8 @@ export default Meist
 
 
 export async function getStaticProps() {
-    const props = JSON.stringify(state)
     return {
-        props: {
-            props
-        }
+        props: state
+
     };
 }

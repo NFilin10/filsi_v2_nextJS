@@ -8,10 +8,6 @@ import Styles from './Swiper.module.css'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
-// import '../../../../styles/SwiperComp.css';
-
-// import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 import Link from "next/link";
 import Image from "next/image";

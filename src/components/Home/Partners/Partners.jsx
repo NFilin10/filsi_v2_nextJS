@@ -1,26 +1,17 @@
-import React, {useEffect} from 'react'
-
+import React from 'react'
 import Styles from './Partners.module.css'
-import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 
 
-
 const Partners = (props) => {
-
 
     let partnersElements = props.state.map((partner, index) =>
         <div className={Styles.partners} data-aos="zoom-in" key={index}>
             <Image className={Styles.partnerLogo} src={partner.logo} alt=""/>
-            {/*<h3>{partner.name}</h3>*/}
         </div>
     )
 
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-    }, []);
 
     return (
         <div className={Styles.partnersWrapper}>

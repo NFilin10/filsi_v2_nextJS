@@ -4,17 +4,13 @@ import ProjectsGallery from "@/components/Projects/ProjectsGallery/ProjectsGalle
 import MainLayout from "@/layouts/MainLayout";
 import dynamic from "next/dynamic";
 import Head from "next/head";
-// import Map from "@/components/Projects/Map/Map";
 
 
-const Projektid = ({props}) => {
-
-    const propsObj = JSON.parse(props)
+const Projektid = (props) => {
 
     const DynamicMap = dynamic(() => import("@/components/Projects/Map/Map"), {
         ssr: false,
     })
-
 
     return (
         <>
@@ -28,25 +24,19 @@ const Projektid = ({props}) => {
             </Head>
             <MainLayout>
                 <div>
-                    <ProjectsGallery state={propsObj.home[0]}/>
-                    <DynamicMap state={propsObj.home[0].projects}/>
+                    <ProjectsGallery state={props.home[0]}/>
+                    <DynamicMap state={props.home[0].projects}/>
                 </div>
             </MainLayout>
         </>
-
-
-
-
     );
 }
 
 export default Projektid
 
 export async function getStaticProps() {
-    const props = JSON.stringify(state)
     return {
-        props: {
-            props
-        }
+        props: state
+
     };
 }

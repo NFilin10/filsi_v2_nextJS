@@ -1,16 +1,11 @@
-import React, {useEffect} from 'react'
-
-
-
+import React from 'react'
 import Styles from './Projects.module.css'
-
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import "aos/dist/aos.css";
-
-import AOS from "aos";
 import Link from "next/link";
 import Image from "next/image";
+
 
 const Projects = (props) => {
 
@@ -44,11 +39,6 @@ const Projects = (props) => {
 
     )
 
-
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-    }, []);
 
     return (
         <div className={Styles.projectsWrapper} data-aos="fade-up" data-aos-duration="1500">

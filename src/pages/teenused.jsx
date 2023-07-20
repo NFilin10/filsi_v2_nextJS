@@ -4,10 +4,8 @@ import ServicesContent from "@/components/Services/ServicesContent/ServicesConte
 import MainLayout from "@/layouts/MainLayout";
 import Head from "next/head";
 
-const Teenused = ({props}) => {
 
-    const propsObj = JSON.parse(props)
-
+const Teenused = (props) => {
 
     return(
         <>
@@ -18,25 +16,22 @@ const Teenused = ({props}) => {
                 <meta name="description" content="Avastage meie kvaliteetsed elektrimontaažiteenused! Pakume mitmesuguseid teenuseid, sealhulgas välisvõrkude ehitus, sisetööd, kontaktvõrgu ehitus, kaevetööd, alajaamade ehitus, käit, projekteerimine ja ehitustööd. Lugege lähemalt meie teenuste kohta ja kuidas saame teid aidata elektrivajaduste rahuldamisel."/>
                 <meta name="keywords" content="elektrimontaažiteenused, välisvõrkude ehitus, sisetööd, kontaktvõrgu ehitus, kaevetööd, alajaamade ehitus, käit, projekteerimine, ehitustööd"/>
                 <title>Filsi - Teenused</title>
-
             </Head>
             <MainLayout>
                 <div>
-                    <ServicesContent state={propsObj.home[0]}/>
+                    <ServicesContent state={props.home[0]}/>
                 </div>
             </MainLayout>
         </>
-
-
     )
 }
+
 export default Teenused
 
+
 export async function getStaticProps() {
-    const props = JSON.stringify(state)
     return {
-        props: {
-            props
-        }
+        props: state
+
     };
 }
