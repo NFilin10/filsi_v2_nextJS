@@ -49,7 +49,7 @@
 }
 
 .equipmentImg{
-    height: 400px;
+    max-height: 400px;
     width: 502px;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .equipmentImgModal{
-    height: 450px;
+    max-height: 400px;
     width: 100%;
 }
 
