@@ -50,7 +50,7 @@ function Navbar(props) {
                         <Link href='/teenused' className={Styles.navLink} >Teenused</Link>
                     </li>
                     <li onClick={removeActive}>
-                        <Link href='/projektid' className={Styles.navLink}>Tehtud too</Link>
+                        <Link href='/projektid' className={Styles.navLink}>Tehtud töö</Link>
                     </li>
                     <li onClick={removeActive}>
                         <Link href='/meist' className={Styles.navLink}>Firmast</Link>
