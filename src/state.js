@@ -64,30 +64,30 @@ const state = {
             {
                 id: 1,
                 serviceName: "Välisvõrkude ehitus",
-                serviceDescription: "See teenus hõlmab elektrivõrkude rajamist ja hooldust välitingimustes, tagades elektrienergia leviku piirkonnas või territooriumil.",
+                serviceDescription: "See teenus hõlmab elektrivõrkude rajamist ja hooldust välitingimustes.",
                 serviceImg: service1,
-                shortDesc: ["Mastide ja postide paigaldus", "Kaablite paigaldus", "Maa-alune kaablite paigaldus", "Välisvõrkude hooldus ja remont"]
+                shortDesc: ["Mastide ja postide paigaldus", "Kaablite paigaldus", "Maa-aluste kaablite paigaldamine", "Välisvõrkude hooldus ja remont"]
             },
             {
                 id: 2,
                 serviceName: "Sisetööd",
-                serviceDescription: "Selle teenusega tegeletakse elektrisüsteemide paigaldamise, remondi ja hooldusega hoonetes ja struktuurides, et tagada ohutu ja usaldusväärne elektrivarustus.",
+                serviceDescription: "Selle teenusega tegeletakse elektrisüsteemide paigaldamise, remondi ja hooldusega hoonetes, et tagada ohutu ja usaldusväärne elektrivarustus.",
                 serviceImg: service2,
-                shortDesc: ["Elektrijuhtmestiku paigaldus", "Valgustussüsteemide paigaldus", "Pistikupesade ja lülitite paigaldus", "Elektrisüsteemide auditeerimine ja hooldus"]
+                shortDesc: ["Elektrijuhtmestiku paigaldus", "Valgustussüsteemide paigaldus", "Pistikupesade ja lülitite paigaldus", "Elektrisüsteemide hooldus"]
             },
             {
                 id: 3,
                 serviceName: "Kontaktvõrgu ehitus",
-                serviceDescription: "See teenus hõlmab kontaktliinide või elektriliinide ehitamist, mille abil elektrienergia edastatakse ühendatud seadmetele ja klientidele.",
+                serviceDescription: "See teenus hõlmab kontaktliinide või elektriliinide ehitamist, tagades elektrirongide liikluse.",
                 serviceImg: service3,
-                shortDesc: ["Kontaktliinide paigaldus", "Isolatsioonimaterjalide kinnitamine", "Kontaktliinide hooldus ja remont"]
+                shortDesc: ["Kontaktliinide paigaldus", "Kontaktliinide hooldus ja remont"]
             },
             {
                 id: 4,
                 serviceName: "Kaevetööd",
-                serviceDescription: "Kaevetööd hõlmavad maapinna kaevamist ja töötlemist, et paigaldada elektrikaablid, torustikud või muud seadmed elektrivõrguga seotud projekte ja rajatisi vajavate tööde jaoks.",
+                serviceDescription: "Kaevetööd hõlmavad maapinna kaevamist ja töötlemist, et paigaldada elektrikaablid, torustikud või muud seadmed seotud elektrivõrguga",
                 serviceImg: service4,
-                shortDesc: ["Kaeviku kaevamine kaablite paigaldamiseks", "Kaeviku täitmine pärast kaablite paigaldust", "Kaablikaitse torude paigaldus", "Side- ja elektrikaablite markeerimine"]
+                shortDesc: ["Kaeviku kaevamine kaablite paigaldamiseks", "Kaeviku täitmine pärast kaablite paigaldust", "Kaablikaitse torude paigaldus", "Side- ja elektrikaablite paigaldamine"]
             },
             {
                 id: 5,
@@ -101,12 +101,12 @@ const state = {
                 serviceName: "Käit",
                 serviceDescription: "Käituteenus hõlmab elektrisüsteemide ja seadmete järelevalvet, hooldust, remonti ja optimeerimist, et tagada nende tõrgeteta toimimine ja pikaajaline usaldusväärsus.",
                 serviceImg: service6,
-                shortDesc: ["Elektrisüsteemide jälgimine ja hooldus", "Rikete ja häirete käsitlemine", "Plumbing"]
+                shortDesc: ["Elektrisüsteemide jälgimine ja hooldus", "Rikete ja häirete käsitlemine"]
             },
             {
                 id: 7,
                 serviceName: "Projekteerimine",
-                serviceDescription: "Projekteerimisteenus hõlmab kohandatud elektrisüsteemide planeerimist ja kavandamist vastavalt klientide vajadustele, arvestades ohutuse, tõhususe ja energiasäästlikkuse põhimõtteid.",
+                serviceDescription: "Projekteerimisteenus hõlmab  elektrisüsteemide planeerimist ja kavandamist vastavalt klientide vajadustele, arvestades ohutuse, tõhususe ja energiasäästlikkuse põhimõtteid.",
                 serviceImg: service7,
                 shortDesc: ["Elektrisüsteemi kavandamine ja projekteerimine", "Tehniliste jooniste ja dokumentatsiooni loomine", "Seadmete ja komponentide valik vastavalt projektinõuetele"]
             },
@@ -115,7 +115,7 @@ const state = {
                 serviceName: "Ehitustööd",
                 serviceDescription: "Ehitusteenus hõlmab elektriinfrastruktuuri ehitamist, sealhulgas elektrisüsteemide, kaablite, juhtmete ja muude seadmete paigaldamist vastavalt projektidele ja ehitusstandarditele.",
                 serviceImg: service8,
-                shortDesc: ["Elektrisüsteemide paigaldus vastavalt projektile", "Ühenduste kontrollimine ja testimine", "Ehitusplatsi ettevalmistamine"]
+                shortDesc: ["Üldehitustööd"]
             },
         ],
         pageInfoServices: [

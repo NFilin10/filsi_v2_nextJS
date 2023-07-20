@@ -10,7 +10,7 @@ const About = () => {
         <div className={Styles.aboutContent}>
             <div className={Styles.headingSection}>
                 <h6 data-aos="fade-right" data-aos-duration="1500">
-                    Suurimad projektid
+                    Suuremad projektid
                 </h6>
                 <h2 data-aos="fade-right" data-aos-duration="1500">ÜLE 25 AASTA OLEME TEIE USALDUSVÄÄRNE ELEKTRIFIRMA</h2>
             </div>
