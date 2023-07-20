@@ -39,6 +39,7 @@ function Home(props) {
                 <meta name="description" content="Tere tulemast meie kodulehele! Pakume kvaliteetseid elektrimontaažiteenuseid ja ehitustöid. Välisvõrkude ehitus, sisetööd, kontaktvõrgu ehitus ja palju muud. Tutvuge meie teenustega ja võtke meiega ühendust!"/>
                 <meta name="keywords" content="elektrimontaaž, ehitustööd, välisvõrkude ehitus, sisetööd, kontaktvõrgu ehitus"/>
                 <meta name="author" content="Filsi"/>
+                <meta name="google-site-verification" content="YJ0Nq0W9Y3XXY2-4diDik5tnVSX5diZsU5WxOhn-bsI" />
                 <title>Filsi - Kvaliteetsed Elektrimontaažiteenused</title>
             </Head>
             <MainLayout>
