@@ -7,3 +7,10 @@
     max-width: 540px !important;
     max-height: 705px !important;
 }
+
+@media screen and (max-width: 780px){
+    .react-multi-carousel-list  {
+        margin-top: 10px;
+        /*height: 607px !important;*/
+    }
+}
