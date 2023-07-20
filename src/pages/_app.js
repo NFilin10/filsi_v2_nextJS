@@ -9,6 +9,7 @@ import {useEffect} from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import 'reactjs-popup/dist/index.css';
+import {Analytics} from "@vercel/analytics/react";
 
 
 export default function App({ Component, pageProps }) {
@@ -20,5 +21,12 @@ export default function App({ Component, pageProps }) {
         });
     }, []);
 
-    return <Component {...pageProps} />;
+    return (
+        <>
+            <Component {...pageProps} />
+            <Analytics />
+        </>
+
+        )
+
 }
