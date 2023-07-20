@@ -133,7 +133,7 @@ const state = {
                 finishDate: "06.2019",
                 location: "maardu",
                 completedBy: "Filsi",
-                projectDescription: "Sturgeon Electric has performed electrical work at DEN since 1991, when the firm was awarded the electrical services contract for the airport’s construction. Since then, we have worked regularly at DEN, including projects involving fire alarm system upgrades, underground primary distribution, street lighting, runway lighting, and the baggage system. Notable projects involve Jeppesen Terminal and Concourses A and C, and the Hotel and Transit Center at DEN, for which Sturgeon Electrical was the primary electrical contractor.",
+                projectDescription: "",
                 Latitude: 59.45047898716102,
                 Longitude: 24.602906514467623
             },

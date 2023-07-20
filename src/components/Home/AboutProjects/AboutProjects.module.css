@@ -1,5 +1,5 @@
 .aboutProjectsWrapper{
-    height: 1335.5px;
+    height: 1500px;
     background-color: #2D2D2D;
     position: relative;
     margin-top: 210px;
@@ -25,7 +25,7 @@
     flex-direction: column;
     margin: 180.5px auto;
     max-width: 1603px;
-    /*height: 100%;*/
+    /*height: 1300px;*/
 }
 
 @media screen and (max-width: 780px){

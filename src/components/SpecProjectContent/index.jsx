@@ -18,12 +18,10 @@ const Index = (props) => {
                            alt=""/>
                 </div>
                 <div className={Styles.content} data-aos="zoom-in-up">
+                    <p className={Styles.projectInfo}>
+                        {props.state.projectDescription ? props.state.projectDescription : ""}
+                    </p>
                     <table className={Styles.table}>
-                        <thead>
-                        <tr>
-                            <th colSpan="2"><h2>{props.state.name ? props.state.name : ""}</h2></th>
-                        </tr>
-                        </thead>
                         <tbody className={Styles.tableBody}>
                         <tr>
                             <td className={Styles.label}>Lõpetamise kuupäev</td>
@@ -39,9 +37,6 @@ const Index = (props) => {
                         </tr>
                         </tbody>
                     </table>
-                    <p className={Styles.projectInfo}>
-                        {props.state.projectDescription ? props.state.projectDescription : ""}
-                    </p>
                 </div>
 
             </div>

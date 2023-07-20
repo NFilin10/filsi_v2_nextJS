@@ -42,7 +42,6 @@ const Projects = (props) => {
 
     return (
         <div className={Styles.projectsWrapper} data-aos="fade-up" data-aos-duration="1500">
-            <h3 className={Styles.projectSectionHeading}>Vaata, mida me oleme võimelised</h3>
             <Carousel
                 swipeable={true}
                 draggable={true}

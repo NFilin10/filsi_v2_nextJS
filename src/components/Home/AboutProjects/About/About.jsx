@@ -12,7 +12,7 @@ const About = () => {
                 <h6 data-aos="fade-right" data-aos-duration="1500">
                     Suurimad projektid
                 </h6>
-                <h2 data-aos="fade-right" data-aos-duration="1500">ÜLE <span>25 AASTA</span> OLEME <span>TEIE</span> USALDUSVÄÄRNE ELEKTRIFIRMA</h2>
+                <h2 data-aos="fade-right" data-aos-duration="1500">ÜLE 25 AASTA OLEME TEIE USALDUSVÄÄRNE ELEKTRIFIRMA</h2>
             </div>
             <div className={Styles.aboutSection}>
                 <div className={Styles.aboutSectionContent}>
@@ -20,7 +20,7 @@ const About = () => {
                         Filsi OÜ on Eesti elektrifirma, asutatud 1997. aastal. Me tegeleme elektrimontaažitöödega, pakkudes välisvõrkude ehitust, sisetöid, kontaktvõrgu ehitust, kaevetöid, alajaamade ehitust, käit, projekteerimist ja ehitustöid. Filsi OÜ-l on suur tehnika park ning olulised projektid hõlmavad Kakumäe Sadamat, Module Tech&aposi, Eesti Traati ja Favorit. Meie oleme tuntud professionaalse teeninduse poolest, pakkudes usaldusväärseid elektritöid ja tagades elektrisüsteemide ohutuse ning usaldusväärsuse.
                     </p>
                     <button className={Styles.allProjectsBtn} data-aos="fade-left" data-aos-duration="1500">
-                        <Link href="/projektid">Kõik projektid</Link>
+                        <Link href="/projektid">Parimad projektid</Link>
                     </button>
                 </div>
             </div>
