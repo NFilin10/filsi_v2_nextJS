@@ -14,10 +14,11 @@
     /*margin-top: 60px;*/
     max-width: 1602px;
 
-    justify-content: space-between;
+    justify-content: flex-start;
     display: flex;
     flex-wrap: wrap;
     row-gap: 80px;
+    column-gap: 25px;
 }
 
 
@@ -107,7 +108,7 @@
     }
 
     .serviceDescription{
-        height: 320px;
+        height: 340px;
 
     }
 }
