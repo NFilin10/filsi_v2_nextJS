@@ -3,9 +3,13 @@ import Styles from './Footer.module.css'
 import logo from "../../../assets/logo.png";
 import Link from "next/link";
 import Image from "next/image";
+import {useTranslation} from "next-i18next";
 
 
 const Footer = () => {
+
+    const { t } = useTranslation('common');
+
 
     return (
         <footer className={Styles.footerWrapper}>
@@ -13,29 +17,29 @@ const Footer = () => {
                 <Link href='/' className={Styles.logo}><Image src={logo} alt=""/></Link>
                 <ul className={Styles.fastLinksList}>
                     <li>
-                        <Link href='/' >Esileht</Link>
+                        <Link href='/' >{t('navbar.link1')}</Link>
                     </li>
                     <li>
-                        <Link href='/teenused'>Teenused</Link>
+                        <Link href='/teenused'>{t('navbar.link2')}</Link>
                     </li>
                     <li>
-                        <Link href='/projektid' >Tehtud töö</Link>
+                        <Link href='/projektid' >{t('navbar.link3')}</Link>
                     </li>
                     <li>
-                        <Link href='/meist' >Firmast</Link>
+                        <Link href='/meist' >{t('navbar.link4')}</Link>
                     </li>
                     <li>
-                        <Link href='/tehnika' >Meie tehnika</Link>
+                        <Link href='/tehnika' >{t('navbar.link5')}</Link>
                     </li>
                     <li>
-                        <Link href='/kontakt' >Kontakt</Link>
+                        <Link href='/kontakt' >{t('navbar.link6')}</Link>
                     </li>
                 </ul>
 
                 <ul className={Styles.shortInfo}>
-                    <li>Suur-Männiku 8, Tallinn 11216</li>
-                    <li>Mobiil +372 501 2509</li>
-                    <li> E-post: filsi@filsi.ee</li>
+                    <li>{t('footer.address')}</li>
+                    <li>{t('footer.phone')}</li>
+                    <li> {t('footer.email')}</li>
                 </ul>
 
             </div>

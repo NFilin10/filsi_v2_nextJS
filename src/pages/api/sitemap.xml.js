@@ -1,5 +1,5 @@
 const data = [
-    { params: { slug: '/' }},
+    { params: { slug: '' }},
     { params: { slug: 'teenused' }},
     { params: { slug: 'projektid' }},
     { params: { slug: 'meist' }},
@@ -9,7 +9,18 @@ const data = [
     { params: { slug: 'projektid/module-tech' }},
     { params: { slug: 'projektid/eesti-traat' }},
     { params: { slug: 'projektid/favor' }},
-    { params: { slug: 'projektid/r13' }}
+    { params: { slug: 'projektid/r13' }},
+    { params: { slug: 'en' }},
+    { params: { slug: 'en/teenused' }},
+    { params: { slug: 'en/projektid' }},
+    { params: { slug: 'en/meist' }},
+    { params: { slug: 'en/tehnika' }},
+    { params: { slug: 'en/kontakt' }},
+    { params: { slug: 'en/projektid/kakumae-sadam' }},
+    { params: { slug: 'en/projektid/module-tech' }},
+    { params: { slug: 'en/projektid/eesti-traat' }},
+    { params: { slug: 'en/projektid/favor' }},
+    { params: { slug: 'en/projektid/r13' }}
 
 ];
 

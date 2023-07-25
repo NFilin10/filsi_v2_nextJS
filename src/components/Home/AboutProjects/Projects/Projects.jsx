@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-const Projects = (props) => {
+const Projects = ({projects}) => {
 
     const responsive = {
         superLargeDesktop: {
@@ -29,7 +29,7 @@ const Projects = (props) => {
         }
     };
 
-    let projectElements = props.state.map((project, index) =>
+    let projectElements = projects.map((project, index) =>
         <Link href={"/projektid/" + project.url} key={index}>
             <div className={Styles.project}>
                 <Image className={Styles.projectImg} src={project.img} alt=""/>

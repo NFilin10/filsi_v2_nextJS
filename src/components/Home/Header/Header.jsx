@@ -7,13 +7,9 @@ import SwiperComp from "./Swiper/Swiper";
 
 const Header = (props) => {
 
-
     return (
         <header>
-
-
-
-            <SwiperComp state={props.state}/>
+            <SwiperComp state={props.state} images={props.images}/>
         </header>
 
 

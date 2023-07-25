@@ -3,9 +3,13 @@ import state from "@/state";
 import EquipmentContent from "@/components/Equipment/EquipmentContent/EquipmentContent";
 import MainLayout from "@/layouts/MainLayout";
 import Head from "next/head";
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
+import {useTranslation} from "next-i18next";
 
 
 const Tehnika = (props) => {
+    const { t } = useTranslation('common')
+
 
     return(
         <>
@@ -19,7 +23,7 @@ const Tehnika = (props) => {
             </Head>
             <MainLayout>
                 <div>
-                    <EquipmentContent state={props.equipment[0]}/>
+                    <EquipmentContent state={t('equipment.0', {returnObjects: true})} eqImg={props.state.equipment[0]}/>
                 </div>
             </MainLayout>
         </>
@@ -29,8 +33,13 @@ const Tehnika = (props) => {
 export default Tehnika
 
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
     return {
-        props: state
-    };
+        props: {
+            ...(await serverSideTranslations(locale, [
+                'common',
+            ])),
+            state
+        },
+    }
 }

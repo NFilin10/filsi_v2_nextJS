@@ -4,6 +4,8 @@ import ProjectsGallery from "@/components/Projects/ProjectsGallery/ProjectsGalle
 import MainLayout from "@/layouts/MainLayout";
 import dynamic from "next/dynamic";
 import Head from "next/head";
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
+import {useTranslation} from "next-i18next";
 
 
 const Projektid = (props) => {
@@ -11,6 +13,10 @@ const Projektid = (props) => {
     const DynamicMap = dynamic(() => import("@/components/Projects/Map/Map"), {
         ssr: false,
     })
+
+    const { t } = useTranslation('common')
+
+
 
     return (
         <>
@@ -24,8 +30,8 @@ const Projektid = (props) => {
             </Head>
             <MainLayout>
                 <div>
-                    <ProjectsGallery state={props.home[0]}/>
-                    <DynamicMap state={props.home[0].projects}/>
+                    <ProjectsGallery state={t('home.0.pageInfoProjects.0', {returnObjects: true})} project_info={props.state.home[0]}/>
+                    <DynamicMap state={t('projectPage.0', {returnObjects: true})} project_info={props.state.home[0].projects}/>
                 </div>
             </MainLayout>
         </>
@@ -34,9 +40,13 @@ const Projektid = (props) => {
 
 export default Projektid
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
     return {
-        props: state
-
-    };
+        props: {
+            ...(await serverSideTranslations(locale, [
+                'common',
+            ])),
+            state
+        },
+    }
 }

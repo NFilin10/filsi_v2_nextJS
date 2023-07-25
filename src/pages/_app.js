@@ -10,9 +10,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import 'reactjs-popup/dist/index.css';
 import {Analytics} from "@vercel/analytics/react";
+import { appWithTranslation } from 'next-i18next'
 
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
     useEffect(() => {
         AOS.init({
             easing: "ease-out-cubic",
@@ -30,3 +31,5 @@ export default function App({ Component, pageProps }) {
         )
 
 }
+
+export default  appWithTranslation(App)

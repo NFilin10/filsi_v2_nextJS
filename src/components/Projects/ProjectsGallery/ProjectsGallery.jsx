@@ -4,9 +4,10 @@ import Link from "next/link";
 import {useRouter} from "next/router";
 import Image from "next/image";
 import PageHeading from "@/components/common/PageHeading/PageHeading";
+import {log} from "next/dist/server/typescript/utils";
 
 
-const ProjectsGallery = (props) => {
+const ProjectsGallery = ({state, project_info}) => {
 
     const location = useRouter();
 
@@ -26,7 +27,7 @@ const ProjectsGallery = (props) => {
 
     const [noOfElement, setnoOfElement] = useState(3);
     const loadMore = () => {
-        if (noOfElement + noOfElement >= props.state.projects.length) {
+        if (noOfElement + noOfElement >= project_info.projects.length) {
             const btn = document.querySelector(`.${Styles.buttonWrapper}`)
             btn.style.display = "none"
             const gallery = document.querySelector(`.${Styles.projectPhotos}`)
@@ -35,7 +36,8 @@ const ProjectsGallery = (props) => {
         }
         setnoOfElement(noOfElement + noOfElement)
     }
-    const slice = props.state.projects.slice(0, noOfElement)
+    const slice = project_info.projects.slice(0, noOfElement)
+    console.log(project_info.projects)
 
 
     let projectElements = slice.map((project, index) =>
@@ -52,14 +54,14 @@ const ProjectsGallery = (props) => {
     return (
         <div className={Styles.projectsGalleryContainer}>
             <div className={Styles.projectsGalleryContent}>
-                <PageHeading state={props.state.pageInfoProjects[0]}/>
+                <PageHeading state={state}/>
             </div>
             <div className={Styles.projectPhotosWrapper}>
                 <div className={Styles.projectPhotos} >
                     {projectElements}
                 </div>
                 <div className={Styles.buttonWrapper}>
-                    <button className={Styles.allProjectsBtn} onClick={() => loadMore()}>KUVA ROHKEM</button>
+                    <button className={Styles.allProjectsBtn} onClick={() => loadMore()}>{state.btnText}</button>
                 </div>
             </div>
 

@@ -4,9 +4,9 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 
 
-const Partners = (props) => {
+const Partners = ({state, logos}) => {
 
-    let partnersElements = props.state.map((partner, index) =>
+    let partnersElements = logos.map((partner, index) =>
         <div className={Styles.partners} data-aos="zoom-in" key={index}>
             <Image className={Styles.partnerLogo} src={partner.logo} alt=""/>
         </div>
@@ -17,7 +17,7 @@ const Partners = (props) => {
         <div className={Styles.partnersWrapper}>
             <div className={Styles.partnersContent}>
                 <div className={Styles.partnersHeading}>
-                    <h1>Meie Partnerid</h1>
+                    <h1>{state.heading}</h1>
                 </div>
                 <div className={Styles.partnersList}>
                     {partnersElements}

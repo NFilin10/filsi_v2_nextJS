@@ -3,9 +3,14 @@ import state from "@/state";
 import ServicesContent from "@/components/Services/ServicesContent/ServicesContent";
 import MainLayout from "@/layouts/MainLayout";
 import Head from "next/head";
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
+import {useTranslation} from "next-i18next";
 
 
 const Teenused = (props) => {
+
+    const { t } = useTranslation('common')
+
 
     return(
         <>
@@ -19,7 +24,7 @@ const Teenused = (props) => {
             </Head>
             <MainLayout>
                 <div>
-                    <ServicesContent state={props.home[0]}/>
+                    <ServicesContent  state={t('home.0', {returnObjects: true})} images={props.state.home[0].services}/>
                 </div>
             </MainLayout>
         </>
@@ -29,9 +34,13 @@ const Teenused = (props) => {
 export default Teenused
 
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
     return {
-        props: state
-
-    };
+        props: {
+            ...(await serverSideTranslations(locale, [
+                'common',
+            ])),
+            state
+        },
+    }
 }

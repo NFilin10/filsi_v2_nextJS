@@ -1,0 +1,286 @@
+{
+  "navbar": {
+    "link1": "Home",
+    "link2": "Services",
+    "link3": "Our projects",
+    "link4": "About",
+    "link5": "Our equipment",
+    "link6": "Contact"
+  },
+  "footer": {
+    "address": "Suur-Männiku 8, Tallinn 11216",
+    "phone": "Mobile +372 501 2509",
+    "email": "Email: filsi@filsi.ee"
+  },
+  "home": [
+    {
+      "swiper": [
+        {
+          "text1": "Trustworthy partners in the electricity company.",
+          "text2": "Builders who do the best work",
+          "btnText": "Who we are"
+        },
+        {
+          "text1": "Discover powerful electrical solutions with our company.",
+          "text2": "We are builders who create the future",
+          "btnText": "Who we are"
+        },
+        {
+          "text1": "An electricity company that provides innovative solutions.",
+          "text2": " Our builders bring your ideas to life",
+          "btnText": "Who we are"
+        }
+      ],
+      "services": [
+        {
+          "id": 1,
+          "serviceName": "External Grid Construction",
+          "serviceDescription": "This service includes the construction and maintenance of electrical networks in outdoor conditions.",
+          "shortDesc": [
+            "Installation of poles and posts",
+            "Cable installation",
+            "Installation of underground cables",
+            "Maintenance and repair of external grids"
+          ]
+        },
+        {
+          "id": 2,
+          "serviceName": "Internal Works",
+          "serviceDescription": "This service deals with the installation, repair, and maintenance of electrical systems in buildings, ensuring a safe and reliable power supply.",
+          "shortDesc": [
+            "Electrical wiring installation",
+            "Installation of lighting systems",
+            "Installation of sockets and switches",
+            "Maintenance of electrical systems"
+          ]
+        },
+        {
+          "id": 3,
+          "serviceName": "Contact Network Construction",
+          "serviceDescription": "This service includes the construction of contact lines or electrical lines, ensuring the traffic of electric trains.",
+          "shortDesc": [
+            "Installation of contact lines",
+            "Maintenance and repair of contact lines"
+          ]
+        },
+        {
+          "id": 4,
+          "serviceName": "Excavation Works",
+          "serviceDescription": "Excavation works involve digging and processing the ground to install electrical cables, pipelines, or other devices related to the electrical grid.",
+          "shortDesc": [
+            "Excavation of trenches for cable installation",
+            "Backfilling trenches after cable installation",
+            "Installation of cable protection pipes",
+            "Installation of communication and power cables"
+          ]
+        },
+        {
+          "id": 5,
+          "serviceName": "Substation Construction",
+          "serviceDescription": "This service includes the construction of substations, which are essential for distributing electricity and converting energy to connected areas and customers.",
+          "shortDesc": [
+            "Connecting cables to the substation",
+            "Testing and configuring the substation",
+            "Ensuring the security of the substation"
+          ]
+        },
+        {
+          "id": 6,
+          "serviceName": "Operations and Maintenance",
+          "serviceDescription": "Operations and maintenance service involves monitoring, maintaining, repairing, and optimizing electrical systems and equipment to ensure their smooth operation and long-term reliability.",
+          "shortDesc": [
+            "Monitoring and maintenance of electrical systems",
+            "Handling faults and disturbances"
+          ]
+        },
+        {
+          "id": 7,
+          "serviceName": "Design and Planning",
+          "serviceDescription": "Design and planning service includes the planning and designing of electrical systems according to client's needs, considering safety, efficiency, and energy-saving principles.",
+          "shortDesc": [
+            "Designing and planning electrical systems",
+            "Creating technical drawings and documentation",
+            "Selecting equipment and components according to project requirements"
+          ]
+        },
+        {
+          "id": 8,
+          "serviceName": "Construction Works",
+          "serviceDescription": "Construction service involves the building of electrical infrastructure, including electrical systems, cables, wires, and other devices according to project specifications and construction standards.",
+          "shortDesc": [
+            "General construction works"
+          ]
+        }
+      ],
+      "pageInfoServices": [
+        {
+          "upperHeading": "our",
+          "lowerHeading": "services",
+          "supHeading": ""
+        }
+      ],
+      "pageInfoProjects": [
+        {
+          "upperHeading": "our",
+          "lowerHeading": "projects",
+          "supHeading": "Discover projects that helped build resilience leases and trusted connections",
+          "btnText": "LOAD MORE"
+        }
+      ],
+      "projects": [
+        {
+          "id": 0,
+          "url": "kakumae-sadam",
+          "img": "./assets/kakumaeSadam.jpg",
+          "name": "Kakumäe Sadam",
+          "finishDate": "06.2019",
+          "location": "maardu",
+          "completedBy": "Filsi",
+          "projectDescription": "",
+          "Latitude": 59.45047898716102,
+          "Longitude": 24.602906514467623
+        },
+        {
+          "id": 1,
+          "url": "module-tech",
+          "img": "./assets/moduleTech.jpg",
+          "name": "Module Tech",
+          "finishDate": "10.2019 ja 03.2021",
+          "location": "maardu",
+          "completedBy": "Filsi",
+          "Latitude": 59.446804506266645,
+          "Longitude": 24.943789984457965
+        },
+        {
+          "id": 2,
+          "url": "eesti-traat",
+          "img": "./assets/eestiTraat.jpg",
+          "name": "Eesti Traat",
+          "finishDate": "06.2018",
+          "location": "maardu",
+          "completedBy": "Filsi",
+          "Latitude": 59.424281340044885,
+          "Longitude": 24.95524521329249
+        },
+        {
+          "id": 3,
+          "url": "favor",
+          "img": "./assets/favor.jpg",
+          "name": "Favor",
+          "finishDate": "05.2023",
+          "location": "maardu",
+          "completedBy": "Filsi",
+          "Latitude": 59.44687181380816,
+          "Longitude": 24.94435881144405
+        },
+        {
+          "id": 4,
+          "url": "r13",
+          "img": "./assets/r13.jpeg",
+          "name": "Lao ja büroohoone",
+          "client": "Maru",
+          "finishDate": "09.2022",
+          "location": "maardu",
+          "completedBy": "Filsi",
+          "Latitude": 59.3521623611344,
+          "Longitude": 24.88790910107856
+        }
+      ],
+      "partners": {
+        "heading": "Our Partners"
+      },
+      "about": {
+        "upperHeading": "Major Projects",
+        "mainHeading": "OVER 25 YEARS, WE ARE YOUR RELIABLE ELECTRICITY COMPANY",
+        "about": "Filsi OÜ is an Estonian electricity company, founded in 1997. We specialize in electrical installations, offering services in external grid construction, internal works, contact network construction, excavation works, substation construction, operations and maintenance, design and planning, and construction works. Filsi OÜ has a large fleet of machinery, and our significant projects include Kakumäe Harbor, Module Tech, Eesti Traat, and Favorit. We are known for providing professional service, delivering reliable electrical works, and ensuring the safety and reliability of electrical systems.",
+        "btnText": "Best Projects"
+      }
+    }
+  ],
+  "contact": [
+    {
+      "contactInfo": [
+        {
+          "heading": "Our location",
+          "midInfo": "Suur-Männiku 8",
+          "lowInfo": "Tallinn Harjumaa 11216"
+        },
+        {
+          "heading": "Contact us",
+          "midInfo": "Mobile +372 501 2509",
+          "lowInfo": "."
+        },
+        {
+          "heading": "Write us",
+          "midInfo": "filsi@filsi.ee",
+          "lowInfo": "."
+        }
+      ],
+      "contactForm": {
+        "heading1": "WRITE",
+        "heading2": "US",
+        "namePH": "name",
+        "msgPH": "message",
+        "sub": "CONTACT INFO : +372 501 2509",
+        "btnText": "SEND"
+      },
+      "pageInfoContact": [
+        {
+          "upperHeading": "Our",
+          "lowerHeading": "contacts"
+        }
+      ]
+    }
+  ],
+  "equipment": [
+    {
+      "equipmentInfo": [
+        {
+          "equipmentDesc": "JCB 4CX is a four-wheel-drive versatile construction machine widely used in excavation, loading, road construction, and many other construction tasks. It ensures excellent performance, precision, and efficiency even on the most demanding construction sites. The JCB 4CX features a four-telescopic boom that allows for extensive and flexible use. Additionally, it is equipped with an advanced control system, making it easy and intuitive to operate."
+        },
+        {
+          "equipmentDesc": "Yanmar VIO80 is a compact crawler excavator, perfect for construction sites requiring greater digging depth and lifting capacity. It features a powerful engine that ensures high performance and fuel efficiency. The Yanmar VIO80 is equipped with a modern hydraulic system that allows for smooth and precise operation. Additionally, it has a comfortable and spacious operator cabin, providing a pleasant working environment for the operator."
+        },
+        {
+          "equipmentDesc": "Yanmar VIO23 is a compact excavator that is excellent for smaller construction and digging tasks. It features a compact design, allowing access to narrow spaces. The Yanmar VIO23 has a reliable hydraulic system, enabling smooth operations and precise movements. It also comes with an intuitive control panel, making it user-friendly, even for beginners."
+        },
+        {
+          "equipmentDesc": "Yanmar SVO8 is a compact crawler excavator that can be easily maneuvered in confined spaces. It is perfect for gardening, landscaping, and smaller construction tasks. The Yanmar SVO8 features strong hydraulic performance, enabling fast and efficient work. Additionally, it has a tilting cabin, allowing easy access for maintenance and repairs."
+        },
+        {
+          "equipmentDesc": "Bobcat S175 is a compact and powerful skid-steer loader used for material handling and various construction tasks. It has high lifting capacity and a stable construction, ensuring safe and efficient operations. The Bobcat S175 features an ergonomic operator cabin and an intuitive control panel, making it comfortable to use."
+        },
+        {
+          "equipmentDesc": " Bobcat E16 is a compact excavator perfect for smaller digging tasks. It features a powerful engine, allowing smooth and efficient excavation. The Bobcat E16 has a compact design, enabling access to narrow spaces. Additionally, it is equipped with a modern control system, making it easy to use."
+        }
+      ],
+      "pageInfoEquipment": [
+        {
+          "upperHeading": "our",
+          "lowerHeading": "equipment",
+          "supHeading": ""
+        }
+      ]
+    }
+  ],
+  "about": [
+    {
+      "pageInfoAbout": [
+        {
+          "upperHeading": "about",
+          "lowerHeading": "us",
+          "supHeading": ""
+        }
+      ],
+      "heading": "RECOGNIZED LEADER IN ELECTRICAL CONSTRUCTION",
+      "about": "Filsi Ltd. is an Estonian electrical company founded in 1997. The company specializes in electrical assembly works and offers various services. These services include external network construction, interior works, contact network construction, excavation works, substation construction, operation, design, and construction works. Filsi Ltd. has an impressive fleet of construction equipment covering a wide range of machinery.\n The company has carried out several notable projects, including Kakumäe Harbor, Module Tech, Eesti Traat, and Favor. These large projects have helped strengthen Filsi Ltd.'s reputation and experience in the field of electrical assembly.\n Filsi Ltd. is known for its professional and reliable service, and they have an experienced team capable of delivering high-quality results for various electrical projects. The company's goal is to provide customers with the best possible solution to meet their electrical needs and ensure the safety and reliability of electrical systems."
+    }
+  ],
+  "projectPage": [
+    {
+      "finishDate": "Finish date",
+      "location": "Location",
+      "orderer": "Orderer"
+    }
+  ]
+}

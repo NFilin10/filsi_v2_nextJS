@@ -1,0 +1,292 @@
+{
+
+    "navbar": {
+        "link1": "Esileht",
+        "link2": "Teenused",
+        "link3": "Tehtud töö",
+        "link4": "Firmast",
+        "link5": "Meie tehnika",
+        "link6": "Kontakt"
+    },
+
+    "footer": {
+        "address": "Suur-Männiku 8, Tallinn 11216",
+        "phone": "Mobiil +372 501 2509",
+        "email": "E-post: filsi@filsi.ee"
+    },
+
+    "home": [
+        {
+            "swiper": [
+                {
+                    "text1": "Elektrifirma usaldusväärsed partnerid.",
+                    "text2": "Ehitajad, kes teevad parimat tööd",
+                    "btnText": "Kes me oleme"
+                },
+                {
+                    "text1": "Avasta võimsad elektrilahendused meie ettevõttega.",
+                    "text2": "Oleme ehitajad, kes loovad tuleviku",
+                    "btnText": "Kes me oleme"
+                },
+                {
+                    "text1": "Elektrifirma, mis pakub innovaatilisi lahendusi.",
+                    "text2": "Meie ehitajad toovad teie ideed ellu",
+                    "btnText": "Kes me oleme"
+                }
+            ],
+            "services": [
+                {
+                    "id": 1,
+                    "serviceName": "Välisvõrkude ehitus",
+                    "serviceDescription": "See teenus hõlmab elektrivõrkude rajamist ja hooldust välitingimustes.",
+                    "shortDesc": [
+                        "Mastide ja postide paigaldus",
+                        "Kaablite paigaldus",
+                        "Maa-aluste kaablite paigaldamine",
+                        "Välisvõrkude hooldus ja remont"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "serviceName": "Sisetööd",
+                    "serviceDescription": "Selle teenusega tegeletakse elektrisüsteemide paigaldamise, remondi ja hooldusega hoonetes, et tagada ohutu ja usaldusväärne elektrivarustus.",
+                    "shortDesc": [
+                        "Elektrijuhtmestiku paigaldus",
+                        "Valgustussüsteemide paigaldus",
+                        "Pistikupesade ja lülitite paigaldus",
+                        "Elektrisüsteemide hooldus"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "serviceName": "Kontaktvõrgu ehitus",
+                    "serviceDescription": "See teenus hõlmab kontaktliinide või elektriliinide ehitamist, tagades elektrirongide liikluse.",
+                    "shortDesc": [
+                        "Kontaktliinide paigaldus",
+                        "Kontaktliinide hooldus ja remont"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "serviceName": "Kaevetööd",
+                    "serviceDescription": "Kaevetööd hõlmavad maapinna kaevamist ja töötlemist, et paigaldada elektrikaablid, torustikud või muud seadmed seotud elektrivõrguga",
+                    "shortDesc": [
+                        "Kaeviku kaevamine kaablite paigaldamiseks",
+                        "Kaeviku täitmine pärast kaablite paigaldust",
+                        "Kaablikaitse torude paigaldus",
+                        "Side- ja elektrikaablite paigaldamine"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "serviceName": "Alajaamade ehitus",
+                    "serviceDescription": " See teenus hõlmab alajaamade rajamist, mis on olulised elektrivarustuse jaotamiseks ning energia muundamiseks ühendatud piirkondadele ja klientidele.",
+                    "shortDesc": [
+                        "Kaablite ühendamine alajaama",
+                        "Alajaama testimine ja seadistamine",
+                        "Alajaama turvalisuse tagamine"
+                    ]
+                },
+                {
+                    "id": 6,
+                    "serviceName": "Käit",
+                    "serviceDescription": "Käituteenus hõlmab elektrisüsteemide ja seadmete järelevalvet, hooldust, remonti ja optimeerimist, et tagada nende tõrgeteta toimimine ja pikaajaline usaldusväärsus.",
+                    "shortDesc": [
+                        "Elektrisüsteemide jälgimine ja hooldus",
+                        "Rikete ja häirete käsitlemine"
+                    ]
+                },
+                {
+                    "id": 7,
+                    "serviceName": "Projekteerimine",
+                    "serviceDescription": "Projekteerimisteenus hõlmab  elektrisüsteemide planeerimist ja kavandamist vastavalt klientide vajadustele, arvestades ohutuse, tõhususe ja energiasäästlikkuse põhimõtteid.",
+                    "shortDesc": [
+                        "Elektrisüsteemi kavandamine ja projekteerimine",
+                        "Tehniliste jooniste ja dokumentatsiooni loomine",
+                        "Seadmete ja komponentide valik vastavalt projektinõuetele"
+                    ]
+                },
+                {
+                    "id": 8,
+                    "serviceName": "Ehitustööd",
+                    "serviceDescription": "Ehitusteenus hõlmab elektriinfrastruktuuri ehitamist, sealhulgas elektrisüsteemide, kaablite, juhtmete ja muude seadmete paigaldamist vastavalt projektidele ja ehitusstandarditele.",
+                    "shortDesc": [
+                        "Üldehitustööd"
+                    ]
+                }
+            ],
+            "pageInfoServices": [
+                {
+                    "upperHeading": "meie",
+                    "lowerHeading": "teenused",
+                    "supHeading": ""
+                }
+            ],
+            "pageInfoProjects": [
+                {
+                    "upperHeading": "meie",
+                    "lowerHeading": "projektid",
+                    "supHeading": "Avaldage projektid, mis aitasid ehitada vastupanuvõimelisi ja usaldusväärseid ühendusi",
+                    "btnText": "KUVA ROHKEM"
+                }
+            ],
+            "projects": [
+                {
+                    "id": 0,
+                    "url": "kakumae-sadam",
+                    "img": "./assets/kakumaeSadam.jpg",
+                    "name": "Kakumäe Sadam",
+                    "finishDate": "06.2019",
+                    "location": "maardu",
+                    "completedBy": "Filsi",
+                    "projectDescription": "",
+                    "Latitude": 59.45047898716102,
+                    "Longitude": 24.602906514467623
+                },
+                {
+                    "id": 1,
+                    "url": "module-tech",
+                    "img": "./assets/moduleTech.jpg",
+                    "name": "Module Tech",
+                    "finishDate": "10.2019 ja 03.2021",
+                    "location": "maardu",
+                    "completedBy": "Filsi",
+                    "Latitude": 59.446804506266645,
+                    "Longitude": 24.943789984457965
+                },
+                {
+                    "id": 2,
+                    "url": "eesti-traat",
+                    "img": "./assets/eestiTraat.jpg",
+                    "name": "Eesti Traat",
+                    "finishDate": "06.2018",
+                    "location": "maardu",
+                    "completedBy": "Filsi",
+                    "Latitude": 59.424281340044885,
+                    "Longitude": 24.95524521329249
+                },
+                {
+                    "id": 3,
+                    "url": "favor",
+                    "img": "./assets/favor.jpg",
+                    "name": "Favor",
+                    "finishDate": "05.2023",
+                    "location": "maardu",
+                    "completedBy": "Filsi",
+                    "Latitude": 59.44687181380816,
+                    "Longitude": 24.94435881144405
+                },
+                {
+                    "id": 4,
+                    "url": "r13",
+                    "img": "./assets/r13.jpeg",
+                    "name": "Lao ja büroohoone",
+                    "client": "Maru",
+                    "finishDate": "09.2022",
+                    "location": "maardu",
+                    "completedBy": "Filsi",
+                    "Latitude": 59.3521623611344,
+                    "Longitude": 24.88790910107856
+                }
+            ],
+
+            "partners" : {
+                "heading": "Meie Partnerid"
+            },
+
+            "about": {
+                "upperHeading" : "Suuremad projektid",
+                "mainHeading" : "ÜLE 25 AASTA OLEME TEIE USALDUSVÄÄRNE ELEKTRIFIRMA",
+                "about": "Filsi OÜ on Eesti elektrifirma, asutatud 1997. aastal. Me tegeleme elektrimontaažitöödega, pakkudes välisvõrkude ehitust, sisetöid, kontaktvõrgu ehitust, kaevetöid, alajaamade ehitust, käit, projekteerimist ja ehitustöid. Filsi OÜ-l on suur tehnika park ning olulised projektid hõlmavad Kakumäe Sadamat, Module Tech&aposi, Eesti Traati ja Favorit. Meie oleme tuntud professionaalse teeninduse poolest, pakkudes usaldusväärseid elektritöid ja tagades elektrisüsteemide ohutuse ning usaldusväärsuse.",
+                "btnText": "Parimad projektid"
+            }
+        }
+    ],
+    "contact": [
+        {
+            "contactInfo": [
+                {
+                    "heading": "Meie Asukoht",
+                    "midInfo": "Suur-Männiku 8",
+                    "lowInfo": "Tallinn Harjumaa 11216"
+                },
+                {
+                    "heading": "Võtke meiega ühendust",
+                    "midInfo": "Mobiil +372 501 2509",
+                    "lowInfo": "."
+                },
+                {
+                    "heading": "Kirjutage meile",
+                    "midInfo": "filsi@filsi.ee",
+                    "lowInfo": "."
+                }
+            ],
+            "pageInfoContact": [
+                {
+                    "upperHeading": "meie",
+                    "lowerHeading": "kontaktid"
+                }
+            ],
+            "contactForm" : {
+                "heading1": "KIRJUTAGE",
+                "heading2": "MEILE",
+                "namePH": "nimi",
+                "msgPH": "sõnum",
+                "sub": "KONTAKT INFO : +372 501 2509",
+                "btnText": "SAADA"
+
+            }
+        }
+    ],
+    "equipment": [
+        {
+            "equipmentInfo": [
+                {
+                    "equipmentDesc": "JCB 4CX on neljarattaveoline universaalne ehitusmasin, mida kasutatakse laialdaselt kaevetöödel, laadimisel, teede ehitamisel ja paljudel teistel ehitustöödel. See tagab suurepärase jõudluse, täpsuse ja efektiivsuse ka kõige nõudlikumatel ehitusplatsidel. JCB 4CX-l on nelja teleskoopvarrega koppaader, mis võimaldab ulatuslikku ja paindlikku kasutamist. Lisaks on sellel täiustatud juhtimissüsteem, mis muudab selle lihtsaks ja intuitiivseks töötamiseks."
+                },
+                {
+                    "equipmentDesc": "Yanmar VIO80 on kompaktne roomikekskavaator, mis on ideaalne ehitusplatsidel, kus on vaja suuremat kaevamissügavust ja tõstevõimet. Sellel on võimas mootor, mis tagab suure jõudluse ja kütusesäästlikkuse. Yanmar VIO80-l on kaasaegne hüdrauliline süsteem, mis võimaldab sujuvat ja täpset juhtimist. Lisaks on sellel mugav ja ruumikas juhikabiin, mis tagab operaatorile meeldiva töökeskkonna."
+                },
+                {
+                    "equipmentDesc": "Yanmar VIO23 on kompaktne ekskavaator, mis sobib suurepäraselt väiksemate ehitus- ja kaevetööde jaoks. Sellel on kompaktne disain, mis võimaldab juurdepääsu kitsastesse kohtadesse. Yanmar VIO23-l on usaldusväärne hüdrauliline süsteem, mis võimaldab sujuvat tööd ja täpsete liigutuste tegemist. Sellel on ka intuitiivne juhtimispult, mis muudab selle kasutamise lihtsaks ka algajatele."
+                },
+                {
+                    "equipmentDesc": "Yanmar SVO8 on kompaktne roomikekskavaator, mida saab hõlpsasti manööverdada piiratud ruumides. See sobib ideaalselt aedade, haljastuse ja väiksemate ehitustööde jaoks. Yanmar SVO8-l on tugev hüdrauliline jõudlus, mis võimaldab kiiret ja tõhusat tööd. Lisaks on sellel kallutatav kabiin, mis võimaldab hõlpsat juurdepääsu hoolduseks ja remondiks."
+                },
+                {
+                    "equipmentDesc": " Bobcat S175 on kompaktne ja võimekas üheteljeline laadur, mida kasutatakse materjalide laadimiseks ja teiste ehitusülesannete täitmiseks. Sellel on kõrge tõstevõime ja stabiilne konstruktsioon, mis tagab ohutu ja tõhusa töö. Bobcat S175-l on ergonoomiline juhikabiin ja intuitiivne juhtimispult, mis muudab selle kasutamise mugavaks."
+                },
+                {
+                    "equipmentDesc": "Bobcat E16 on kompaktne ekskavaator, mis on ideaalne väiksemate kaevetööde jaoks. Sellel on võimas mootor, mis võimaldab sujuvat ja efektiivset kaevamist. Bobcat E16-l on kompaktne disain, mis võimaldab juurdepääsu kitsastesse ruumidesse. Lisaks on sellel kaasaegne juhtimissüsteem, mis muudab selle lihtsaks kasutada."
+                }
+            ],
+            "pageInfoEquipment": [
+                {
+                    "upperHeading": "meie",
+                    "lowerHeading": "tehnika",
+                    "supHeading": ""
+                }
+            ]
+        }
+    ],
+    "about": [
+        {
+            "pageInfoAbout": [
+                {
+                    "upperHeading": "meie",
+                    "lowerHeading": "ettevõtest",
+                    "supHeading": ""
+                }
+            ],
+            "heading": "ELEKTRIEHITUSE TUNNUSTATUD LIIDER",
+            "about": "Filsi OÜ on Eesti elektrifirma, mis asutati 1997. aastal. Ettevõte spetsialiseerub elektrimontaažitöödele ning pakub mitmesuguseid teenuseid. Nende teenuste hulka kuuluvad välisvõrkude ehitus, sisetööd, kontaktvõrgu ehitus, kaevetööd, alajaamade ehitus, käit, projekteerimine ja ehitustööd. Filsi OÜ-l on muljetavaldav tehnika park, mis hõlmab suurt hulka ehitustehnikat.\n                        Firma on läbi viinud mitmeid märkimisväärseid projekte, sealhulgas Kakumäe Sadam, Module Tech, Eesti Traat ja Favor. Need suurprojektid on aidanud Filsi OÜ-l tugevdada oma mainet ja kogemust elektrimontaaži valdkonnas.\n                        Filsi OÜ on tuntud oma professionaalse ja usaldusväärse teeninduse poolest ning neil on kogenud meeskond, kes suudab kvaliteetselt täita erinevaid elektritööde projekte. Ettevõtte eesmärk on pakkuda klientidele parimat võimalikku lahendust nende elektrivajaduste rahuldamiseks ning tagada elektrisüsteemide ohutus ja usaldusväärsus."
+        }
+    ],
+    "projectPage": [
+        {
+            "finishDate": "Lõpetamise kuupäev",
+            "location": "Asukoht",
+            "orderer": "Tellija"
+        }
+    ]
+}

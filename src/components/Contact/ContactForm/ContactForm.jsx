@@ -4,7 +4,7 @@ import Styles from './ContactForm.module.css'
 import AOS from "aos";
 
 
-const ContactForm = () => {
+const ContactForm = ({state}) => {
 
     useEffect(() => {
         AOS.init();
@@ -57,24 +57,24 @@ const ContactForm = () => {
                 <div className={Styles.screenBody}>
                     <div className={`${Styles.screenBodyItem} ${Styles.left}`}>
                         <div className={Styles.appTitle}>
-                            <span>KIRJUTAGE</span>
-                            <span>MEILE</span>
+                            <span>{state.heading1}</span>
+                            <span>{state.heading2}</span>
                         </div>
-                        <div className={Styles.appContact}>KONTAKT INFO : +372 501 2509</div>
+                        <div className={Styles.appContact}>{state.sub}</div>
                     </div>
                     <div className={Styles.screenBodyItem}>
                         <form className={Styles.appForm} onSubmit={handleSubmit} method="POST">
                             <div className={Styles.appFormGroup}>
-                                <input type="text" value={name} onChange={(e) => setName(e.target.value)} className={Styles.appFormControl} placeholder="NIMI"/>
+                                <input type="text" value={name} onChange={(e) => setName(e.target.value)} className={Styles.appFormControl} placeholder={state.namePH}/>
                             </div>
                             <div className={Styles.appFormGroup}>
                                 <input  type="email" value={email}  onChange={(e) => setEmail(e.target.value)} className={Styles.appFormControl} placeholder="EMAIL"/>
                             </div>
                             <div className={`${Styles.appFormGroup} ${Styles.message}`}>
-                                <input value={message} onChange={(e) => setMessage(e.target.value)} className={Styles.appFormControl} placeholder="SÕNUM"/>
+                                <input value={message} onChange={(e) => setMessage(e.target.value)} className={Styles.appFormControl} placeholder={state.msgPH}/>
                             </div>
                             <div className={`${Styles.appFormGroup} ${Styles.buttons}`}>
-                                <button type="submit" className={Styles.appFormButton}>SAADA</button>
+                                <button type="submit" className={Styles.appFormButton}>{state.btnText}</button>
                             </div>
                         </form>
                     </div>

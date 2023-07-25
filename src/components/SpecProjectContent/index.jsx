@@ -4,36 +4,36 @@ import Image from "next/image";
 import MainLayout from "@/layouts/MainLayout";
 
 
-const Index = (props) => {
+const Index = ({state, project}) => {
 
     return (
         <MainLayout>
             <div className={Styles.wrapper}>
                 <div className={Styles.header}>
 
-                    <h1>{props.state.name ? props.state.name : ""}</h1>
+                    <h1>{project.name}</h1>
                 </div>
                 <div className={Styles.projectImg}>
-                    <Image src={props.state.img ? props.state.img : ""}
+                    <Image src={project.img}
                            alt=""/>
                 </div>
                 <div className={Styles.content} data-aos="zoom-in-up">
                     <p className={Styles.projectInfo}>
-                        {props.state.projectDescription ? props.state.projectDescription : ""}
+                        {project.projectDescription}
                     </p>
                     <table className={Styles.table}>
                         <tbody className={Styles.tableBody}>
                         <tr>
-                            <td className={Styles.label}>Lõpetamise kuupäev</td>
-                            <td>{props.state.finishDate ? props.state.finishDate : ""}</td>
+                            <td className={Styles.label}>{state.finishDate}</td>
+                            <td>{project.finishDate}</td>
                         </tr>
                         <tr>
-                            <td className={Styles.label}>Asukoht</td>
-                            <td>{props.state.location ? props.state.location : ""}</td>
+                            <td className={Styles.label}>{state.location}</td>
+                            <td>{project.location}</td>
                         </tr>
                         <tr>
-                            <td className={Styles.label}>Tellija</td>
-                            <td>{props.state.completedBy ? props.state.completedBy : ""}</td>
+                            <td className={Styles.label}>{state.orderer}</td>
+                            <td>{project.completedBy}</td>
                         </tr>
                         </tbody>
                     </table>

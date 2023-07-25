@@ -5,7 +5,7 @@ import Image from "next/image";
 
 
 
-const Services = (props) => {
+const Services = ({state, images}) => {
 
     const handleDragStart = (e) => e.preventDefault();
 
@@ -16,10 +16,10 @@ const Services = (props) => {
     };
 
 
-    let serviceElements = props.state.map((service, index) =>
+    let serviceElements = state.map((service, index) =>
         <div className={Styles.serviceWrapper} key={index}>
             <div className={Styles.serviceImage}>
-                <Image alt="" src={service.serviceImg} onDragStart={handleDragStart} role="presentation" />
+                <Image alt="" src={images[index].serviceImg} onDragStart={handleDragStart} role="presentation" />
             </div>
             <div className={Styles.serviceText}>
                 <span className={Styles.serviceNum}>0{service.id}</span>

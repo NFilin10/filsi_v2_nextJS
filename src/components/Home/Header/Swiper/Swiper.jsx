@@ -13,10 +13,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-export default function SwiperComp(props) {
-    let swiperElement = props.state.map((slide, index) =>
+export default function SwiperComp({state, images}) {
+    console.log(images)
+    let swiperElement = state.map((slide, index) =>
         <SwiperSlide key={index}>
-            <Image src={slide.img} alt=""/>
+            <Image src={images[index].img} alt=""/>
             <div className={Styles.sliderInfowWapper}>
                 <h3 className={Styles.sliderText1}>{slide.text1}</h3>
                 <h1 className={Styles.sliderText2}>{slide.text2}</h1>
@@ -37,7 +38,7 @@ export default function SwiperComp(props) {
                 pagination={true}
                 mousewheel={true}
                 keyboard={true}
-                autoplay={false}
+                autoplay={true}
                 modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
                 className="mySwiper"
             >

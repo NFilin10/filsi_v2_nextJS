@@ -5,7 +5,7 @@ import Image from "next/image";
 import PageHeading from "@/components/common/PageHeading/PageHeading";
 
 
-const ServicesContent = (props) => {
+const ServicesContent = ({state, images}) => {
 
     const location = useRouter();
 
@@ -23,10 +23,10 @@ const ServicesContent = (props) => {
     }, [servicePage]);
 
 
-    let servicesElement = props.state.services.map((service, index) =>
+    let servicesElement = state.services.map((service, index) =>
 
         <div className={Styles.service} data-aos="flip-up"  data-aos-duration="1500" key={index}>
-            <Image className={Styles.serviceImg} src={service.serviceImg} alt=""/>
+            <Image className={Styles.serviceImg} src={images[index].serviceImg} alt=""/>
             <div className={Styles.serviceDescription}>
                 <h3>{service.serviceName}</h3>
                 <ul>
@@ -42,7 +42,7 @@ const ServicesContent = (props) => {
     return(
 
         <div className={Styles.servicesContainer}>
-            <PageHeading state={props.state.pageInfoServices[0]}/>
+            <PageHeading state={state.pageInfoServices[0]}/>
             <div className={Styles.services}>
                 {servicesElement}
             </div>

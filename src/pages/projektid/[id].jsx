@@ -3,6 +3,8 @@ import state from "@/state";
 import {useRouter} from "next/router";
 import Head from "next/head";
 import Index from "src/components/SpecProjectContent";
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
+import {useTranslation} from "next-i18next";
 
 
 
@@ -11,12 +13,14 @@ const Id = (props) => {
     const params = useRouter()
 
     let id = 0
-    for (const object of props.home[0].projects) {
+    for (const object of state.home[0].projects) {
         if (object.url === params.query.id){
             break
         }
         id++
     }
+
+    const { t } = useTranslation('common')
 
 
     return (
@@ -25,12 +29,12 @@ const Id = (props) => {
                 <meta charSet="UTF-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <meta name="author" content="Filsi"/>
-                <title>{props.home[0].projects[id].name}</title>
-                <meta name="description" content={props.home[0].projects[id].projectDescription}/>
+                <title>{state.home[0].projects[id].name}</title>
+                <meta name="description" content={state.home[0].projects[id].projectDescription}/>
                 <meta name="keywords" content="objekt, ehitustööd, projekt"/>
             </Head>
             <div>
-                <Index state={props.home[0].projects[id]}/>
+                <Index state={t('projectPage.0', {returnObjects: true})} project={state.home[0].projects[id]}/>
             </div>
         </>
 
@@ -39,18 +43,28 @@ const Id = (props) => {
 export default Id
 
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
     return {
-        props: state
-    };
+        props: {
+            ...(await serverSideTranslations(locale, [
+                'common',
+            ])),
+            state
+        },
+    }
 }
 
 
 export async function getStaticPaths() {
+    const locales = ['en', 'et']; // List of supported locales
 
-    const paths = state.home[0].projects.map((project) => ({
-        params: {id:project.url}
-    }))
+    // Generate paths for each locale and dynamic page
+    const paths = locales.flatMap((locale) =>
+        state.home[0].projects.map((project) => ({
+            params: {id: project.url},
+            locale, // Add the locale to the path object
+        }))
+    );
 
     return {paths, fallback: false};
 }

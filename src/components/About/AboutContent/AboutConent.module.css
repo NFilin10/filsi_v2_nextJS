@@ -7,10 +7,15 @@
     max-width: 1602px;
 }
 
-.textInfo{
-    text-align: justify;
+.textInfo {
     display: block;
     width: 30%;
+
+}
+
+.text{
+    text-align: justify;
+    display: block;
 
 }
 

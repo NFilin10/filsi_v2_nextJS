@@ -6,7 +6,7 @@ import Image from "next/image";
 import {useRouter} from "next/router";
 import PageHeading from "@/components/common/PageHeading/PageHeading";
 
-const EquipmentContent = (props) => {
+const EquipmentContent = ({state, eqImg}) => {
 
 
     const location = useRouter();
@@ -25,7 +25,7 @@ const EquipmentContent = (props) => {
     }, [equipmentPage]);
 
 
-    let equpmentElement = props.state.equipmentInfo.map((equipment, index) =>
+    let equpmentElement = eqImg.equipmentInfo.map((equipment, index) =>
 
 
         <Popup key={index} trigger=
@@ -43,7 +43,7 @@ const EquipmentContent = (props) => {
                             <Image className={Styles.equipmentImgModal} src={equipment.equipmentImg} alt=""/>
                             <div className={Styles.equipmentDescriptionModal}>
                                 <div>{equipment.equipmentName}</div>
-                                <p>{equipment.equipmentDesc}</p>
+                                <p>{state.equipmentInfo[index].equipmentDesc}</p>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ const EquipmentContent = (props) => {
 
     return (
         <div className={Styles.equipmentsContainer}>
-            <PageHeading state={props.state.pageInfoEquipment[0]}/>
+            <PageHeading state={state.pageInfoEquipment[0]}/>
             <div className={Styles.equipments}>
                 {equpmentElement}
             </div>

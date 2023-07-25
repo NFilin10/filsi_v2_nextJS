@@ -3,9 +3,13 @@ import AboutContent from "@/components/About/AboutContent/AboutContent";
 import state from "@/state";
 import MainLayout from "@/layouts/MainLayout";
 import Head from "next/head";
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
+import {useTranslation} from "next-i18next";
 
 
-const Meist = (props) => {
+const Meist = () => {
+    const { t } = useTranslation('common')
+
 
     return(
         <>
@@ -19,7 +23,7 @@ const Meist = (props) => {
             </Head>
             <MainLayout>
                 <div>
-                    <AboutContent state={props.about[0]}/>
+                    <AboutContent state={t('about.0', {returnObjects: true})}/>
                 </div>
             </MainLayout>
 
@@ -32,9 +36,13 @@ const Meist = (props) => {
 export default Meist
 
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
     return {
-        props: state
+        props: {
+            ...(await serverSideTranslations(locale, [
+                'common',
+            ])),
 
-    };
+        },
+    }
 }

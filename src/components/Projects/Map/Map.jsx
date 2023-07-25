@@ -4,7 +4,7 @@ import Styles from './Map.module.css';
 import Image from 'next/image';
 
 
-const Map = (props) => {
+const Map = ({state, project_info}) => {
     const [activeObject, setActiveObject] = useState(null);
 
     return (
@@ -18,7 +18,7 @@ const Map = (props) => {
                 url='https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=e1f8c1aa-4bbd-415d-80b9-e7605f1521d8'
             />
 
-            {props.state.map((eachData) => (
+            {project_info.map((eachData) => (
                 <Marker
                     key={eachData.id}
                     position={[eachData.Latitude, eachData.Longitude]}
@@ -37,8 +37,8 @@ const Map = (props) => {
                         >
                             <div>
                                 <h1>{eachData.name}</h1>
-                                <p>Tellija: {eachData.completedBy}</p>
-                                <p>Lõpetamise kuupäev: {eachData.finishDate}</p>
+                                <p>{state.orderer}: {eachData.completedBy}</p>
+                                <p>{state.finishDate}: {eachData.finishDate}</p>
                                 <Image className={Styles.mapCompImage} src={eachData.img} alt="" />
                             </div>
                         </Popup>

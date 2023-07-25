@@ -4,12 +4,13 @@ import Styles from './AboutProjects.module.css'
 import Projects from './Projects/Projects'
 import 'aos/dist/aos.css';
 
-const AbooutProjects = (props) => {
+const AbooutProjects = ({state, projects}) => {
+    console.log(state)
     return (
         <div className={Styles.aboutProjectsWrapper}>
             <div className={Styles.aboutProjectsContent}>
-                <About/>
-                <Projects state={props.state}/>
+                <About state={state}/>
+                <Projects projects={projects}/>
             </div>
         </div>
     )
