@@ -16,12 +16,9 @@ const Kontakt = (props) => {
     return(
         <>
             <Head>
-                <meta charSet="UTF-8"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <meta name="author" content="Filsi"/>
-                <meta name="description" content="Võtke meiega ühendust ja küsige lisateavet elektrimontaažiteenuste kohta. Oleme siin, et aidata teil lahendada teie elektriga seotud vajadused. Täitke kontaktivorm või kasutage meie e-posti ja telefoninumbrit. Ootame teiega koostööd!"/>
-                <meta name="keywords" content="kontakt, elektrimontaaž, kontaktivorm, e-post, telefon"/>
-                <title>Filsi - kontakt</title>
+                <meta name="description" content={t('contact.0.seo.0.description', {returnObjects: true})}/>
+                <meta name="keywords" content={t('contact.0.seo.0.keywords', {returnObjects: true})}/>
+                <title>{t('contact.0.seo.0.title', {returnObjects: true})}</title>
             </Head>
             <MainLayout>
                 <div>

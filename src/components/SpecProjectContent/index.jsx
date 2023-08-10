@@ -31,10 +31,10 @@ const Index = ({state, project}) => {
                             <td className={Styles.label}>{state.location}</td>
                             <td>{project.location}</td>
                         </tr>
-                        <tr>
-                            <td className={Styles.label}>{state.orderer}</td>
-                            <td>{project.completedBy}</td>
-                        </tr>
+                        {/*<tr>*/}
+                        {/*    <td className={Styles.label}>{state.orderer}</td>*/}
+                        {/*    <td>{project.completedBy}</td>*/}
+                        {/*</tr>*/}
                         </tbody>
                     </table>
                 </div>

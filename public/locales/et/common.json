@@ -17,6 +17,14 @@
 
     "home": [
         {
+            "seo": [
+                {
+                    "description": "Tere tulemast meie kodulehele! Pakume kvaliteetseid elektrimontaažiteenuseid ja ehitustöid. Välisvõrkude ehitus, sisetööd, kontaktvõrgu ehitus ja palju muud. Tutvuge meie teenustega ja võtke meiega ühendust!",
+                    "keywords": "elektrimontaaž, ehitustööd, välisvõrkude ehitus, sisetööd, kontaktvõrgu ehitus",
+                    "title": "Filsi - Kvaliteetsed Elektrimontaažiteenused"
+                }
+            ],
+
             "swiper": [
                 {
                     "text1": "Elektrifirma usaldusväärsed partnerid.",
@@ -190,6 +198,14 @@
                 }
             ],
 
+            "projectsSeo": [
+                {
+                    "description": "Tutvuge meie tehtud projektidega! Oleme edukalt lõpetanud mitmeid olulisi projekte, sealhulgas Kakumäe sadama, Module Tech'i, Eesti Traadi ja Favoriga. Vaadake meie tööde galeriid ning saage aimu meie kogemustest ja oskustest elektrimontaaživaldkonnas.",
+                    "keywords": "tehtud projektid, Kakumäe sadam, Module Tech, Eesti Traat, Favor, elektrimontaaž, galerii, kogemused, oskused",
+                    "title": "Filsi - Tehtud Projektid"
+                }
+            ],
+
             "partners" : {
                 "heading": "Meie Partnerid"
             },
@@ -204,6 +220,13 @@
     ],
     "contact": [
         {
+            "seo": [
+                {
+                    "description": "Võtke meiega ühendust ja küsige lisateavet elektrimontaažiteenuste kohta. Oleme siin, et aidata teil lahendada teie elektriga seotud vajadused. Täitke kontaktivorm või kasutage meie e-posti ja telefoninumbrit. Ootame teiega koostööd!",
+                    "keywords": "kontakt, elektrimontaaž, kontaktivorm, e-post, telefon",
+                    "title": "Filsi - Kontakt"
+                }
+            ],
             "contactInfo": [
                 {
                     "heading": "Meie Asukoht",
@@ -271,6 +294,13 @@
     ],
     "about": [
         {
+            "seo": [
+                {
+                    "description": "Tutvuge meiega lähemalt! Oleme 1997. aastal asutatud elektrimontaažifirma, kes pakub kvaliteetseid ja usaldusväärseid teenuseid. Meie meeskonnal on laialdased kogemused välisvõrkude ehituses, sisetöödes, kontaktvõrgu ehituses ja palju muus. Lugege meie ettevõtte ajaloo ja oskusteabe kohta ning kuidas saame teid aidata.",
+                    "keywords": "meie ettevõte, elektrimontaaž, välisvõrkude ehitus, sisetööd, kontaktvõrgu ehitus, ajalugu, oskusteave",
+                    "title": "Filsi - Meie ettevõte"
+                }
+            ],
             "pageInfoAbout": [
                 {
                     "upperHeading": "meie",

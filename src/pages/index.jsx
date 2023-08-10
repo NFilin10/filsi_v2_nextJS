@@ -32,7 +32,14 @@ function Home(props) { // Add 'props' as an argument
 
     return (
         <>
-            {/* ... (Head and other JSX code) */}
+            <Head>
+                {/*<meta charSet="UTF-8"/>*/}
+                {/*<meta name="viewport" content="width=device-width, initial-scale=1.0"/>*/}
+                {/*<meta name="author" content="Filsi"/>*/}
+                <meta name="description" content={t('home.0.seo.0.description', {returnObjects: true})}/>
+                <meta name="keywords" content={t('home.0.seo.0.keywords', {returnObjects: true})}/>
+                <title>{t('home.0.seo.0.title', {returnObjects: true})}</title>
+            </Head>
             <MainLayout>
                 <div className="homeWrapper">
                     <Header state={t('home.0.swiper', {returnObjects: true})} images={props.state.home[0].swiper}/>

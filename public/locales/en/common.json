@@ -14,6 +14,14 @@
   },
   "home": [
     {
+
+      "seo": [
+        {
+          "description": "Welcome to our website! We offer high-quality electrical installation services and construction works. External network construction, interior works, contact network construction, and much more. Explore our services and get in touch with us!",
+          "keywords": "electrical installation, construction works, external network construction, interior works, contact network construction",
+          "title": "Filsi - High-Quality Electrical Installation Services"
+        }
+      ],
       "swiper": [
         {
           "text1": "Trustworthy partners in the electricity company.",
@@ -186,6 +194,15 @@
           "Longitude": 24.88790910107856
         }
       ],
+
+      "projectsSeo": [
+        {
+          "description": "Explore our completed projects! We have successfully finished several significant projects, including Kakumäe Harbor, Module Tech, Eesti Traat, and Favor. Take a look at our work gallery and get an idea of our experience and expertise in the field of electrical installation.",
+          "keywords": "completed projects, Kakumäe Harbor, Module Tech, Eesti Traat, Favor, electrical installation, gallery, experience, skills",
+          "title": "Filsi - Completed Projects"
+        }
+      ],
+
       "partners": {
         "heading": "Our Partners"
       },
@@ -199,6 +216,15 @@
   ],
   "contact": [
     {
+
+      "seo": [
+        {
+          "description": "Contact us and inquire for more information about our electrical installation services. We are here to help you address your electricity-related needs. Fill out the contact form or use our email and phone number. We look forward to collaborating with you!",
+          "keywords": "contact, electrical installation, contact form, email, phone",
+          "title": "Filsi - Contact"
+        }
+      ],
+
       "contactInfo": [
         {
           "heading": "Our location",
@@ -265,6 +291,13 @@
   ],
   "about": [
     {
+      "seo": [
+        {
+          "description": "Get to know us better! We are an electrical installation company established in 1997, providing high-quality and reliable services. Our team has extensive experience in external network construction, interior works, contact network construction, and much more. Learn about our company history and expertise, and how we can assist you.",
+          "keywords": "Our company, electrical installation, external network construction, interior works, contact network construction, history, expertise",
+          "title": "Filsi - Our company"
+        }
+      ],
       "pageInfoAbout": [
         {
           "upperHeading": "about",
