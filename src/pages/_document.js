@@ -11,6 +11,7 @@ export default function Document() {
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
                 <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet"/>
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"  rel="stylesheet"/>
+                <meta name="google-site-verification" content="YJ0Nq0W9Y3XXY2-4diDik5tnVSX5diZsU5WxOhn-bsI" />
                 <link
                     rel="stylesheet"
                     href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
